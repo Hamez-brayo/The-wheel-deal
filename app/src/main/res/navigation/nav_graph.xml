@@ -11,7 +11,9 @@
         android:label="HomeFragment" >
         <action
             android:id="@+id/action_homeFragment_to_nextFragment22"
-            app:destination="@id/nextFragment2" />
+            app:destination="@id/nextFragment2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
 
     <fragment
@@ -20,10 +22,14 @@
         android:label="NextFragment" >
         <action
             android:id="@+id/action_nextFragment2_to_sign_up"
-            app:destination="@id/sign_up" />
+            app:destination="@id/sign_up"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
         <action
             android:id="@+id/action_nextFragment2_to_login"
-            app:destination="@id/login" />
+            app:destination="@id/login"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/sign_up"
@@ -32,10 +38,14 @@
         tools:layout="@layout/fragment_sign_up" >
         <action
             android:id="@+id/action_sign_up_to_landing"
-            app:destination="@id/landing" />
+            app:destination="@id/landing"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
         <action
             android:id="@+id/action_sign_up_to_login"
-            app:destination="@id/login" />
+            app:destination="@id/login"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/landing"
@@ -48,9 +58,13 @@
         android:label="Login" >
         <action
             android:id="@+id/action_login_to_sign_up"
-            app:destination="@id/sign_up" />
+            app:destination="@id/sign_up"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
         <action
             android:id="@+id/action_login_to_landing"
-            app:destination="@id/landing" />
+            app:destination="@id/landing"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
 </navigation>
