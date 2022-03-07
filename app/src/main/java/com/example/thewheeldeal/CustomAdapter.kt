@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter(private val mList: List<ItemsViewModel>):RecyclerView.Adapter<CustomAdapter.ViewHolder>()  {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):ViewHolder{
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.landing_page_lists, parent, false)

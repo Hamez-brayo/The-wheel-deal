@@ -18,14 +18,15 @@ class Landing : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_landing, container, false)
     }
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         // getting the recyclerview by its id
-        val recyclerview = view?.findViewById<RecyclerView>(R.id.recyclerview)
+        val recyclerview = view.findViewById<RecyclerView>(R.id.recyclerview)
 
-        // this creates a grid layout Manager
-        recyclerview?.layoutManager = GridLayoutManager(requireActivity(),this)
+        // this creates a vertical layout Manager
+        recyclerview?.layoutManager = GridLayoutManager(requireContext(),2)
 
         // ArrayList of class ItemsViewModel
         val data = ArrayList<ItemsViewModel>()
@@ -41,7 +42,7 @@ class Landing : Fragment() {
 
         // Setting the Adapter with the recyclerview
         recyclerview?.adapter = adapter
-
     }
+
 
 }
