@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class Landing : Fragment() {
@@ -23,10 +22,10 @@ class Landing : Fragment() {
         super.onCreate(savedInstanceState)
 
         // getting the recyclerview by its id
-        val recyclerview = view.findViewById<RecyclerView>(R.id.recyclerview)
+        val recyclerview = view?.findViewById<RecyclerView>(R.id.recyclerview)
 
-        // this creates a vertical layout Manager
-        recyclerview.layoutManager = GridLayoutManager(requireActivity()this)
+        // this creates a grid layout Manager
+        recyclerview?.layoutManager = GridLayoutManager(requireActivity(),this)
 
         // ArrayList of class ItemsViewModel
         val data = ArrayList<ItemsViewModel>()
@@ -41,7 +40,7 @@ class Landing : Fragment() {
         val adapter = CustomAdapter(data)
 
         // Setting the Adapter with the recyclerview
-        recyclerview.adapter = adapter
+        recyclerview?.adapter = adapter
 
     }
 
