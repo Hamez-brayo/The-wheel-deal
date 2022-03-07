@@ -51,7 +51,14 @@
         android:id="@+id/landing"
         android:name="com.example.thewheeldeal.Landing"
         android:label="fragment_landing"
-        tools:layout="@layout/fragment_landing" />
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landing_to_categories"
+            app:destination="@id/categories" />
+        <action
+            android:id="@+id/action_landing_to_item_details"
+            app:destination="@id/item_details" />
+    </fragment>
     <fragment
         android:id="@+id/login"
         android:name="com.example.thewheeldeal.Login"
@@ -66,5 +73,29 @@
             app:destination="@id/landing"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.example.thewheeldeal.Categories"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categories_to_landing"
+            app:destination="@id/landing" />
+        <action
+            android:id="@+id/action_categories_to_item_details"
+            app:destination="@id/item_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/item_details"
+        android:name="com.example.thewheeldeal.Item_details"
+        android:label="fragment_item_details"
+        tools:layout="@layout/fragment_item_details" >
+        <action
+            android:id="@+id/action_item_details_to_landing"
+            app:destination="@id/landing" />
+        <action
+            android:id="@+id/action_item_details_to_categories"
+            app:destination="@id/categories" />
     </fragment>
 </navigation>
