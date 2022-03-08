@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 
-class Chat : Fragment() {
+class Calls : Fragment() {
 
 
     override fun onCreateView(
@@ -20,9 +20,8 @@ class Chat : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chat, container, false)
+        return inflater.inflate(R.layout.fragment_calls, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -43,25 +42,25 @@ class Chat : Fragment() {
         }
 
         // This will pass the ArrayList to our Adapter
-        val adapter = ChatAdapter(data)
+        val adapter = CallAdapter(data)
 
         // Setting the Adapter with the recyclerview
         recyclerview?.adapter = adapter
 
-        view.findViewById<TextView>(R.id.textView19)?.setOnClickListener {
-            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_chat_to_calls)
+        view.findViewById<TextView>(R.id.textView18)?.setOnClickListener {
+            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_calls_to_chat)
         }
         view.findViewById<ImageView>(R.id.imageView39)?.setOnClickListener {
-            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_chat_to_landing)
+            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_calls_to_chat)
         }
         view.findViewById<ImageView>(R.id.imageView47)?.setOnClickListener {
-            view.findNavController()
-                .navigate(com.example.thewheeldeal.R.id.action_chat_to_categories)
+            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_calls_to_categories)
         }
         view.findViewById<ImageView>(R.id.imageView45)?.setOnClickListener {
-            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_chat_to_landing)
+            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_calls_to_landing)
         }
-
-
     }
+
+
+
 }

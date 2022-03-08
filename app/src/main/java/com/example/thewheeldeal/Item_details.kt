@@ -24,6 +24,9 @@ class Item_details : Fragment() {
         view.findViewById<ImageView>(R.id.imageView28).setOnClickListener {
             view.findNavController().navigate(R.id.action_item_details_to_landing)
         }
+        view.findViewById<Button>(R.id.chatbutton)?.setOnClickListener {
+            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_item_details_to_chat)
+        }
 
     }
 

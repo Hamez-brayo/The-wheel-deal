@@ -51,6 +51,10 @@ class Categories : Fragment() {
             view.findNavController()
                 .navigate(com.example.thewheeldeal.R.id.action_categories_to_landing)
         }
+        view.findViewById<ImageView>(R.id.imageView34)?.setOnClickListener {
+            view.findNavController()
+                .navigate(com.example.thewheeldeal.R.id.action_categories_to_chat)
+        }
     }
 
 }

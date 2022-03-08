@@ -1,30 +1,26 @@
 package com.example.thewheeldeal
 
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
-
-class ChatAdapter(private val mList: List<ItemsViewModel>):RecyclerView.Adapter<ChatAdapter.ViewHolder>()  {
+class CallAdapter(private val mList: List<ItemsViewModel>): RecyclerView.Adapter<ChatAdapter.ViewHolder>()  {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.chat_page_list, parent, false)
+            .inflate(R.layout.call_page_list, parent, false)
 
-        return ViewHolder(view)
+        return ChatAdapter.ViewHolder(view)
     }
-
     override fun getItemCount(): Int {
         return mList.size
     }
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
 
 
-        val imageView: ImageView = itemView.findViewById(R.id.imageView44)
+        val imageView: ImageView = itemView.findViewById(R.id.imageView52)
 
         val textView: TextView = itemView.findViewById(R.id.textView17)
 //        init {
@@ -33,8 +29,7 @@ class ChatAdapter(private val mList: List<ItemsViewModel>):RecyclerView.Adapter<
 //            }
 //        }
     }
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ChatAdapter.ViewHolder, position: Int) {
         val ItemsViewModel = mList[position]
 
         // sets the image to the imageview from our itemHolder class
@@ -43,5 +38,6 @@ class ChatAdapter(private val mList: List<ItemsViewModel>):RecyclerView.Adapter<
         // sets the text to the textview from our itemHolder class
         holder.textView.text = ItemsViewModel.text
     }
+
 
 }

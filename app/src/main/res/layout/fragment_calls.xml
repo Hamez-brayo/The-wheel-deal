@@ -37,7 +37,7 @@
         android:layout_marginEnd="100dp"
         android:fontFamily="@font/roboto_bold"
         android:text="Call"
-        android:textColor="@color/white"
+        android:textColor="@color/my_apptheme"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="@+id/toolbar6"
@@ -83,7 +83,7 @@
         android:layout_marginStart="100dp"
         android:fontFamily="@font/roboto_bold"
         android:text="Chat"
-        android:textColor="@color/my_apptheme"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar6"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,11 +100,10 @@
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar6"
-        app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/chat_page_list" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/call_page_list" />
 
     <ImageView
         android:id="@+id/imageView17"

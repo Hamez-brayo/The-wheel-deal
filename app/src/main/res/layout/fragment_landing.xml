@@ -205,7 +205,7 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="414dp"
+        android:layout_width="0dp"
         android:layout_height="68dp"
         android:src="@drawable/botton_navbar"
         app:layout_constraintBottom_toBottomOf="parent"
