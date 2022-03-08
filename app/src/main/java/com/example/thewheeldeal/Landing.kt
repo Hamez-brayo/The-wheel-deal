@@ -51,6 +51,10 @@ class Landing : Fragment() {
             view.findNavController().navigate(R.id.action_landing_to_categories)
 
         }
+        view.findViewById<ImageView>(R.id.imageView23).setOnClickListener {
+            view.findNavController().navigate(R.id.action_landing_to_chat)
+
+        }
 
     }
 

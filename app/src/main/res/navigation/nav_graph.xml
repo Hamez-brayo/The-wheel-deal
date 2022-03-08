@@ -58,6 +58,9 @@
         <action
             android:id="@+id/action_landing_to_item_details"
             app:destination="@id/item_details" />
+        <action
+            android:id="@+id/action_landing_to_chat"
+            app:destination="@id/chat" />
     </fragment>
     <fragment
         android:id="@+id/login"
@@ -98,4 +101,9 @@
             android:id="@+id/action_item_details_to_categories"
             app:destination="@id/categories" />
     </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.thewheeldeal.Chat"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
 </navigation>
