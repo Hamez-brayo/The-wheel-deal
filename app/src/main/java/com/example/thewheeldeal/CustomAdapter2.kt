@@ -1,13 +1,17 @@
 package com.example.thewheeldeal
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter2(private val mList: List<ItemsViewModel>):RecyclerView.Adapter<CustomAdapter2.ViewHolder>()  {
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):ViewHolder{
         val view = LayoutInflater.from(parent.context)
@@ -28,12 +32,13 @@ class CustomAdapter2(private val mList: List<ItemsViewModel>):RecyclerView.Adapt
             val textView: TextView = itemView.findViewById(R.id.textView)
 
             itemView.setOnClickListener {
-                //  val position:Int=absoluteAdapterPosition)
 
                 itemView.findNavController().navigate(R.id.action_categories_to_item_details)
             }
 
         }
+
+
     }
 
 

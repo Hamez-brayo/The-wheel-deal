@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter(private val mList: List<ItemsViewModel>):RecyclerView.Adapter<CustomAdapter.ViewHolder>()  {
@@ -23,6 +24,13 @@ class CustomAdapter(private val mList: List<ItemsViewModel>):RecyclerView.Adapte
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageView15)
         val textView: TextView = itemView.findViewById(R.id.textView)
+        init {
+            val imageView: ImageView = itemView.findViewById(R.id.imageView15)
+            val textView: TextView = itemView.findViewById(R.id.textView)
+            itemView.setOnClickListener{
+                itemView.findNavController().navigate(R.id.action_landing_to_item_details)
+            }
+        }
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
