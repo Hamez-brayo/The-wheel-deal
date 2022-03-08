@@ -28,7 +28,7 @@ class Chat : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // getting the recyclerview by its id
-        val recyclerview = view.findViewById<RecyclerView>(R.id.recyclerview)
+        val recyclerview = view.findViewById<RecyclerView>(R.id.RV)
 
         // this creates a vertical layout Manager
         recyclerview?.layoutManager = LinearLayoutManager(requireActivity())
