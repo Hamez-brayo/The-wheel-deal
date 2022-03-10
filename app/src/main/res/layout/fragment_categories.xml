@@ -5,7 +5,7 @@
     android:id="@+id/constraintlayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Categories">
+    tools:context=".Categories_fragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -23,6 +23,7 @@
         android:id="@+id/imageView26"
         android:layout_width="30dp"
         android:layout_height="35dp"
+        android:contentDescription="@string/searchicon_string"
         android:src="@drawable/ic_baseline_search_24"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +36,7 @@
         android:layout_width="37dp"
         android:layout_height="35dp"
         android:layout_marginStart="260dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/notificationicon_string"
         android:src="@drawable/ic_baseline_notifications_none_24"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
@@ -46,7 +47,7 @@
         android:layout_width="42dp"
         android:layout_height="35dp"
         android:layout_marginStart="16dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/_string"
         android:src="@drawable/ic_baseline_menu_24"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintStart_toStartOf="@+id/toolbar"
@@ -88,7 +89,7 @@
         android:layout_width="320dp"
         android:layout_height="52dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/searchbaricon_string"
         android:src="@drawable/border"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
@@ -100,7 +101,7 @@
         android:layout_width="52dp"
         android:layout_height="51dp"
         android:layout_marginStart="2dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/profilepictureicon_string"
         android:src="@drawable/border"
         app:layout_constraintBottom_toBottomOf="@+id/search"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,6 +116,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/recyclerview_string"
         android:src="@drawable/ui_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +132,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Trucks"
+        android:text="@string/trucks_string"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView11"
@@ -146,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Buses"
+        android:text="@string/buses_string"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
@@ -160,7 +162,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Vans"
+        android:text="@string/vans_sstring"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
@@ -173,7 +175,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Luxury"
+        android:text="@string/luxury_string"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView8"
@@ -187,8 +189,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="1dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Explore"
-        android:textColor="@color/red"
+        android:text="@string/explore_string"
+        android:textColor="#DD2C00"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView12"
         app:layout_constraintStart_toStartOf="parent"
@@ -201,7 +203,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Cars"
+        android:text="@string/cars_string"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
@@ -226,33 +228,38 @@
         android:id="@+id/imageView17"
         android:layout_width="0dp"
         android:layout_height="68dp"
+        android:contentDescription="@string/bottomnavbar_string"
         android:src="@drawable/botton_navbar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView34"
         android:layout_width="35dp"
         android:layout_height="34dp"
         android:layout_marginEnd="56dp"
+        android:contentDescription="@string/chaticon_string"
         android:src="@drawable/ic_baseline_chat_bubble_24"
         app:layout_constraintBottom_toTopOf="@+id/_homeicon5"
         app:layout_constraintEnd_toStartOf="@+id/imageView32"
-        app:layout_constraintTop_toTopOf="@+id/imageView32" />
+        app:layout_constraintTop_toTopOf="@+id/imageView32"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/_homeicon4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Chat"
+        android:text="@string/chat_string"
         android:textColor="@color/grey"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView34"
         app:layout_constraintStart_toStartOf="@+id/imageView34"
-        app:layout_constraintTop_toBottomOf="@+id/imageView34" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView34"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/_homeicon5"
@@ -260,12 +267,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Profile"
+        android:text="@string/profile_string"
         android:textColor="@color/grey"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView32"
         app:layout_constraintStart_toStartOf="@+id/imageView32"
-        app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView32"
+        tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView32"
@@ -273,9 +281,11 @@
         android:layout_height="31dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
+        android:contentDescription="@string/profileicon_string"
         android:src="@drawable/profile"
         app:layout_constraintEnd_toEndOf="@+id/imageView17"
-        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+        app:layout_constraintTop_toTopOf="@+id/imageView17"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView27"
@@ -283,71 +293,82 @@
         android:layout_height="34dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
+        android:contentDescription="@string/homeicon_string"
         android:src="@drawable/ic_baseline_home_243"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+        app:layout_constraintTop_toTopOf="@+id/imageView17"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/_homeicon2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Home"
+        android:text="@string/home_string"
         android:textColor="@color/grey"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView27"
         app:layout_constraintStart_toStartOf="@+id/imageView27"
-        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView27"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/_homeicon3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Categories"
+        android:text="@string/categories_string"
         android:textColor="@color/red"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView31"
         app:layout_constraintStart_toStartOf="@+id/imageView31"
-        app:layout_constraintTop_toBottomOf="@+id/imageView31" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView31"
+        tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView25"
         android:layout_width="80dp"
         android:layout_height="78dp"
         android:layout_marginBottom="28dp"
+        android:contentDescription="@string/addicon_string"
         android:src="@drawable/addbuttonwhite"
         app:layout_constraintBottom_toBottomOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView18"
         android:layout_width="66dp"
         android:layout_height="64dp"
+        android:contentDescription="@string/addicon_string"
         android:src="@drawable/addbutton"
         app:layout_constraintBottom_toBottomOf="@+id/imageView25"
         app:layout_constraintEnd_toEndOf="@+id/imageView25"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
-        app:layout_constraintTop_toTopOf="@+id/imageView25" />
+        app:layout_constraintTop_toTopOf="@+id/imageView25"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/addicon_string"
         android:src="@drawable/ic_baseline_add_24"
         app:layout_constraintBottom_toBottomOf="@+id/imageView18"
         app:layout_constraintEnd_toEndOf="@+id/imageView18"
         app:layout_constraintStart_toStartOf="@+id/imageView18"
-        app:layout_constraintTop_toTopOf="@+id/imageView18" />
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView31"
         android:layout_width="32dp"
         android:layout_height="31dp"
         android:layout_marginStart="56dp"
+        android:contentDescription="@string/categoriesicon1_string"
         android:src="@drawable/ic_baseline_category_243"
         app:layout_constraintBottom_toBottomOf="@+id/imageView27"
         app:layout_constraintStart_toEndOf="@+id/imageView27"

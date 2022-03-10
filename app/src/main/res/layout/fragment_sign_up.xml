@@ -2,65 +2,61 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout2"
+    android:id="@+id/constraintLayout0"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sign_up">
+    tools:context=".sign_up_fragment">
 
     <TextView
         android:id="@+id/passforgot6"
-        android:layout_width="wrap_content"
-        android:layout_height="16dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="3dp"
+        android:layout_width="241dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/by_registering_you_are_agreeing_to_the_string"
         android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/radioButton"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <TextView
         android:id="@+id/Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/login_string"
         android:textColor="#DD2C00"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/passforgot5"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/PassReg"
         app:layout_constraintTop_toBottomOf="@+id/passConfirmtf" />
 
     <TextView
         android:id="@+id/passforgot7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/terms_conditions_string"
         android:textColor="#DD2C00"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/passforgot6"
+        app:layout_constraintEnd_toEndOf="@+id/radioButton"
         app:layout_constraintStart_toEndOf="@+id/passforgot6"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toTopOf="@+id/passforgot6" />
 
     <TextView
         android:id="@+id/passforgot5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/already_have_an_account_string"
         android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passConfirmtf" />
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Login"
+        app:layout_constraintEnd_toStartOf="@+id/Login"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/passConfirmtf"
+        app:layout_constraintTop_toTopOf="@+id/Login" />
 
     <Button
         android:id="@+id/button5"
@@ -73,95 +69,9 @@
         android:textColor="@color/my_apptheme"
         android:textSize="20sp"
         android:typeface="normal"
-        app:cornerRadius="34dp"
-        app:iconPadding="34dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioButton"
+        app:layout_constraintStart_toStartOf="@+id/radioButton"
         app:layout_constraintTop_toBottomOf="@+id/radioButton" />
-
-    <EditText
-        android:id="@+id/editText2"
-
-        android:layout_width="362dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints=""
-        android:background="#30000000"
-        android:drawablePadding="20dp"
-        android:hint="@string/first_name_string"
-        android:inputType="text"
-        android:padding="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="#455A64"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/New" />
-
-    <EditText
-        android:id="@+id/editText3"
-
-        android:layout_width="362dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints=""
-        android:background="#30000000"
-        android:drawablePadding="20dp"
-        android:hint="@string/last_name_string"
-        android:inputType="text"
-        android:padding="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="#455A64"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
-
-    <EditText
-        android:id="@+id/editText4"
-
-        android:layout_width="364dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints=""
-        android:background="#30000000"
-        android:drawablePadding="20dp"
-        android:hint="@string/id_number_stirng"
-        android:inputType="number"
-        android:padding="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="#455A64"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
-
-    <EditText
-        android:id="@+id/email"
-
-        android:layout_width="362dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints=""
-        android:background="#30000000"
-        android:drawablePadding="20dp"
-        android:hint="@string/email_string"
-        android:inputType="textEmailAddress"
-        android:padding="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="#455A64"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
     <!--    <com.google.android.material.textfield.TextInputLayout-->
     <!--        android:id="@+id/Pass"-->
@@ -175,25 +85,99 @@
     <!--        app:layout_constraintTop_toTopOf="@+id/editText7"-->
     <!--        app:passwordToggleEnabled="true" />-->
 
+    <EditText
+        android:id="@+id/editText2"
+
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="#30000000"
+        android:drawablePadding="20dp"
+        android:hint="@string/first_name_string"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#455A64"
+        app:layout_constraintEnd_toEndOf="@+id/New"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/New"
+        app:layout_constraintTop_toBottomOf="@+id/New" />
+
+    <EditText
+        android:id="@+id/editText3"
+
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="#30000000"
+        android:drawablePadding="20dp"
+        android:hint="@string/last_name_string"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#455A64"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText4"
+
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="#30000000"
+        android:drawablePadding="20dp"
+        android:hint="@string/id_number_stirng"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#455A64"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/email"
+
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="#30000000"
+        android:drawablePadding="20dp"
+        android:hint="@string/email_string"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#455A64"
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
     <com.rilixtech.widget.countrycodepicker.CountryCodePicker
         android:id="@+id/ccp"
-        android:layout_width="124dp"
+        android:layout_width="125dp"
         android:layout_height="60dp"
-        android:layout_marginStart="24dp"
         android:background="#30000000"
         app:ccp_defaultNameCode="US"
         app:layout_constraintBottom_toBottomOf="@+id/editText6"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/email"
         app:layout_constraintTop_toTopOf="@+id/editText6"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editText6"
-        android:layout_width="231dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
         android:autofillHints=""
         android:background="#30000000"
         android:drawablePadding="20dp"
@@ -202,8 +186,7 @@
         android:padding="20dp"
         android:textColor="@color/black"
         android:textColorHint="#455A64"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@+id/email"
         app:layout_constraintStart_toEndOf="@+id/ccp"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
@@ -211,7 +194,6 @@
         android:id="@+id/PassReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         app:layout_constraintBottom_toBottomOf="@+id/passConfirmtf"
         app:layout_constraintEnd_toEndOf="@+id/passConfirmtf"
         app:layout_constraintTop_toTopOf="@+id/passConfirmtf"
@@ -221,10 +203,8 @@
         android:id="@+id/editText7"
 
         android:layout_width="360dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="24dp"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
         android:autofillHints=""
         android:background="#30000000"
         android:drawablePadding="20dp"
@@ -233,16 +213,14 @@
         android:padding="20dp"
         android:textColor="@color/black"
         android:textColorHint="#455A64"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText6"
+        app:layout_constraintStart_toStartOf="@+id/ccp"
         app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/PassConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
 
         app:layout_constraintBottom_toBottomOf="@+id/editText7"
         app:layout_constraintEnd_toEndOf="@+id/editText7"
@@ -252,11 +230,9 @@
     <EditText
         android:id="@+id/passConfirmtf"
 
-        android:layout_width="364dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
         android:autofillHints=""
         android:background="#30000000"
         android:drawablePadding="20dp"
@@ -265,9 +241,8 @@
         android:padding="20dp"
         android:textColor="@color/black"
         android:textColorHint="#455A64"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText7"
+        app:layout_constraintStart_toStartOf="@+id/editText7"
         app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
     <TextView
@@ -288,26 +263,21 @@
         android:id="@+id/radioButton"
         android:layout_width="363dp"
         android:layout_height="48dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
         android:text="@string/yes_i_would_like_to_receive_latest_information_via_mail_string"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/PassReg"
+        app:layout_constraintStart_toStartOf="@+id/passConfirmtf"
         app:layout_constraintTop_toBottomOf="@+id/passforgot5" />
 
     <ProgressBar
         android:id="@+id/progressBarL"
-        style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

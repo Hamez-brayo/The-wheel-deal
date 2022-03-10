@@ -6,11 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
 
-class ChatAdapter(private val mList: List<ItemsViewModel>):RecyclerView.Adapter<ChatAdapter.ViewHolder>()  {
+class ChatAdapter(private val mList: List<Items>):RecyclerView.Adapter<ChatAdapter.ViewHolder>()  {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.chat_page_list, parent, false)

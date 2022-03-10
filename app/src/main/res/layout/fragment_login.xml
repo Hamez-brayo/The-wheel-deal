@@ -102,7 +102,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Welcome" />
+        app:layout_constraintTop_toBottomOf="@+id/Welcome"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -122,6 +123,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        android:autofillHints="true"
         android:background="#30000000"
         android:drawableStart="@drawable/ic_baseline_info_24"
         android:drawablePadding="20dp"
@@ -134,7 +136,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Ema"
-         android:autofillHints="true" />
+        tools:ignore="TextContrastCheck" />
    <!--       app:passwordTogglenabled="true"-->
 
 

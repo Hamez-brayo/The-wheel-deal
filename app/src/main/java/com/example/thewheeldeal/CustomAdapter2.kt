@@ -1,15 +1,13 @@
 package com.example.thewheeldeal
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter2(private val mList: List<ItemsViewModel>):RecyclerView.Adapter<CustomAdapter2.ViewHolder>()  {
+class CustomAdapter2(private val mList: List<Items>):RecyclerView.Adapter<CustomAdapter2.ViewHolder>()  {
 
 
 

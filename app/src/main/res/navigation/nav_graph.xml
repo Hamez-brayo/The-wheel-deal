@@ -33,7 +33,7 @@
     </fragment>
     <fragment
         android:id="@+id/sign_up"
-        android:name="com.example.thewheeldeal.sign_up"
+        android:name="com.example.thewheeldeal.sign_up_fragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -49,7 +49,7 @@
     </fragment>
     <fragment
         android:id="@+id/landing"
-        android:name="com.example.thewheeldeal.Landing"
+        android:name="com.example.thewheeldeal.Landing_fragment"
         android:label="fragment_landing"
         tools:layout="@layout/fragment_landing" >
         <action
@@ -64,7 +64,7 @@
     </fragment>
     <fragment
         android:id="@+id/login"
-        android:name="com.example.thewheeldeal.Login"
+        android:name="com.example.thewheeldeal.Login_fragment"
         android:label="Login" >
         <action
             android:id="@+id/action_login_to_sign_up"
@@ -79,7 +79,7 @@
     </fragment>
     <fragment
         android:id="@+id/categories"
-        android:name="com.example.thewheeldeal.Categories"
+        android:name="com.example.thewheeldeal.Categories_fragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" >
         <action
@@ -109,7 +109,7 @@
     </fragment>
     <fragment
         android:id="@+id/chat"
-        android:name="com.example.thewheeldeal.Chat"
+        android:name="com.example.thewheeldeal.Chat_fragment"
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" >
         <action
@@ -130,7 +130,7 @@
     </fragment>
     <fragment
         android:id="@+id/calls"
-        android:name="com.example.thewheeldeal.Calls"
+        android:name="com.example.thewheeldeal.Calls_fragment"
         android:label="Calls" >
         <action
             android:id="@+id/action_calls_to_chat"

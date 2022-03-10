@@ -5,7 +5,7 @@
     android:id="@+id/constraintlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Landing">
+    tools:context=".Landing_fragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar4"
@@ -56,7 +56,7 @@
         android:layout_width="320dp"
         android:layout_height="52dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/searchbaricon_string"
         android:src="@drawable/border"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.181"
@@ -68,7 +68,7 @@
         android:layout_width="52dp"
         android:layout_height="51dp"
         android:layout_marginStart="2dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/profilepictureicon_string"
         android:src="@drawable/border"
         app:layout_constraintBottom_toBottomOf="@+id/search"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,7 @@
         android:id="@+id/imageView8"
         android:layout_width="42dp"
         android:layout_height="35dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/menuicon_string"
         android:src="@drawable/ic_baseline_menu_24"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +95,7 @@
         android:layout_width="37dp"
         android:layout_height="35dp"
         android:layout_marginStart="260dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/notificationicon_string"
         android:src="@drawable/ic_baseline_notifications_none_24"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
@@ -106,6 +106,7 @@
         android:id="@+id/imageView10"
         android:layout_width="30dp"
         android:layout_height="35dp"
+        android:contentDescription="@string/searchicon_string"
         android:src="@drawable/ic_baseline_search_24"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,6 +121,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="12dp"
+        android:contentDescription="@string/splashbackground_string"
         android:src="@drawable/ui_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -132,13 +134,15 @@
         android:id="@+id/imageView14"
         android:layout_width="118dp"
         android:layout_height="80dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
+        android:contentDescription="@string/categoryicon_string"
         android:src="@drawable/rectangle_icons"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintEnd_toStartOf="@+id/imageView16"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toTopOf="@+id/imageView13" />
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView6"
@@ -148,7 +152,7 @@
         android:layout_marginTop="125dp"
         android:layout_marginEnd="327dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Explore"
+        android:text="@string/explore_string"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/imageView12"
         app:layout_constraintHorizontal_bias="0.0"
@@ -161,7 +165,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Categories"
+        android:text="@string/categories_string"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.096"
@@ -186,31 +190,39 @@
         android:id="@+id/imageView13"
         android:layout_width="118dp"
         android:layout_height="80dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/categoryicon_string"
         android:src="@drawable/rectangle_icons"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.666"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView16"
         android:layout_width="118dp"
         android:layout_height="80dp"
+        android:layout_marginStart="12dp"
         android:layout_marginEnd="16dp"
+        android:contentDescription="@string/categoryicon_string"
         android:src="@drawable/rectangle_icons"
         app:layout_constraintBottom_toBottomOf="@+id/imageView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="0dp"
         android:layout_height="68dp"
+        android:contentDescription="@string/bottomnavbar_string"
         android:src="@drawable/botton_navbar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView21"
@@ -218,6 +230,7 @@
         android:layout_height="34dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
+        android:contentDescription="@string/homeicon_string"
         android:src="@drawable/ic_baseline_home_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView17" />
@@ -227,20 +240,24 @@
         android:layout_width="37dp"
         android:layout_height="37dp"
         android:layout_marginStart="56dp"
+        android:contentDescription="@string/categoriesicon1_string"
         android:src="@drawable/ic_baseline_category_24"
         app:layout_constraintBottom_toBottomOf="@+id/imageView21"
         app:layout_constraintStart_toEndOf="@+id/imageView21"
-        app:layout_constraintTop_toTopOf="@+id/imageView21" />
+        app:layout_constraintTop_toTopOf="@+id/imageView21"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView23"
         android:layout_width="35dp"
         android:layout_height="34dp"
         android:layout_marginEnd="56dp"
+        android:contentDescription="@string/chaticon_string"
         android:src="@drawable/ic_baseline_chat_bubble_24"
         app:layout_constraintBottom_toBottomOf="@+id/imageView24"
         app:layout_constraintEnd_toStartOf="@+id/imageView24"
-        app:layout_constraintTop_toTopOf="@+id/imageView24" />
+        app:layout_constraintTop_toTopOf="@+id/imageView24"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView24"
@@ -248,87 +265,99 @@
         android:layout_height="31dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
+        android:contentDescription="@string/profileicon_string"
         android:src="@drawable/profile"
         app:layout_constraintEnd_toEndOf="@+id/imageView17"
-        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+        app:layout_constraintTop_toTopOf="@+id/imageView17"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView25"
         android:layout_width="80dp"
         android:layout_height="78dp"
         android:layout_marginBottom="28dp"
+        android:contentDescription="@string/addicon_string"
         android:src="@drawable/addbuttonwhite"
         app:layout_constraintBottom_toBottomOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView18"
         android:layout_width="66dp"
         android:layout_height="64dp"
+        android:contentDescription="@string/addicon_string"
         android:src="@drawable/addbutton"
         app:layout_constraintBottom_toBottomOf="@+id/imageView25"
         app:layout_constraintEnd_toEndOf="@+id/imageView25"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
-        app:layout_constraintTop_toTopOf="@+id/imageView25" />
+        app:layout_constraintTop_toTopOf="@+id/imageView25"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/addicon_string"
         android:src="@drawable/ic_baseline_add_24"
         app:layout_constraintBottom_toBottomOf="@+id/imageView18"
         app:layout_constraintEnd_toEndOf="@+id/imageView18"
         app:layout_constraintStart_toStartOf="@+id/imageView18"
-        app:layout_constraintTop_toTopOf="@+id/imageView18" />
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/_homeicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Home"
+        android:text="@string/home_string"
         android:textColor="@color/red"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView21"
         app:layout_constraintStart_toStartOf="@+id/imageView21"
-        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/_categoriesicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Categories"
+        android:text="@string/categories_string"
         android:textColor="@color/grey"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView22"
         app:layout_constraintStart_toStartOf="@+id/imageView22"
-        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView22"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/_chaticon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Chat"
+        android:text="@string/chat_string"
         android:textColor="@color/grey"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView23"
         app:layout_constraintStart_toStartOf="@+id/imageView23"
-        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/_chaticon2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Profile"
+        android:text="@string/profile_string"
         android:textColor="@color/grey"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView24"
         app:layout_constraintStart_toStartOf="@+id/imageView24"
-        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView24"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CallAdapter(private val mList: List<ItemsViewModel>): RecyclerView.Adapter<ChatAdapter.ViewHolder>()  {
+class CallAdapter(private val mList: List<Items>): RecyclerView.Adapter<ChatAdapter.ViewHolder>()  {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.call_page_list, parent, false)
