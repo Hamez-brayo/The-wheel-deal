@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <TextView
         android:id="@+id/passforgot2"
@@ -82,7 +82,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <EditText
-        android:id="@+id/Ema"
+        android:id="@+id/emailInput"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -111,13 +111,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:layout_constraintBottom_toBottomOf="@+id/password"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintTop_toTopOf="@+id/password"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
         app:passwordToggleEnabled="true" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -135,7 +135,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Ema"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
         tools:ignore="TextContrastCheck" />
    <!--       app:passwordTogglenabled="true"-->
 
