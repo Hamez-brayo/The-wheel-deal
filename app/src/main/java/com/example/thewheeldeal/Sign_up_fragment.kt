@@ -2,15 +2,12 @@ package com.example.thewheeldeal
 
 
 import android.os.Bundle
-import android.text.InputType
 import android.view.LayoutInflater
-import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.google.firebase.auth.FirebaseAuth
@@ -19,7 +16,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import java.security.AccessController.getContext
 
 
 class sign_up_fragment : Fragment() {
@@ -73,7 +69,7 @@ class sign_up_fragment : Fragment() {
                 try {
                     auth.createUserWithEmailAndPassword(Email,password)
                     withContext(Dispatchers.Main){
-                        checkLoggedInState(view, auth)
+                        checkLoggedInState(view,auth)
                     }
                 }catch (e:Exception){
                     withContext(Dispatchers.Main){
@@ -109,8 +105,5 @@ class sign_up_fragment : Fragment() {
 //    }
 //    return true
 //}
-fun ontouch(){
-
-}
 
 
