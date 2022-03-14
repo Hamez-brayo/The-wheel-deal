@@ -13,4 +13,5 @@
     <color name="red">#FF0000</color>
     <color name="grey">#B8B8B8</color>
     <color name="maintheme">#0000FF</color>
+    <color name="tb_background">#30000000</color>
 </resources>
