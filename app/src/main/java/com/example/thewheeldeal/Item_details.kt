@@ -1,4 +1,4 @@
-package com.example.thewheeldeal.fragments
+package com.example.thewheeldeal
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

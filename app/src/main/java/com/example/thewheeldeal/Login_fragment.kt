@@ -1,4 +1,4 @@
-package com.example.thewheeldeal.fragments
+package com.example.thewheeldeal
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,15 +10,13 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.example.thewheeldeal.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-
-abstract class Login_fragment : Fragment() {
+ class Login_fragment : Fragment() {
 
 
     lateinit var auth: FirebaseAuth
@@ -74,29 +72,11 @@ abstract class Login_fragment : Fragment() {
         if (auth.currentUser==null){
             Toast.makeText( requireActivity(),"Field cant be empty", Toast.LENGTH_SHORT).show()
         }
-//        if(task.isSuccessful())
-//        {
-//            view.findNavController().navigate(R.id.action_login_to_landing)
-//        }
         else{
-            Toast.makeText(requireActivity(), "Wrong Credentials", Toast.LENGTH_SHORT).show()
+            view.findNavController().navigate(R.id.action_login_to_landing)
         }
     }
-//    fun onTouch(view: View, motionEvent: MotionEvent): Boolean {
-//        when (view.id) {
-//            R.id.Pass -> when (motionEvent.action) {
-//                MotionEvent.ACTION_DOWN -> {
-//                    Toast.makeText(context, "show", Toast.LENGTH_SHORT).show()
-//                    R.id.editTextTextPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance())
-//                }
-//                MotionEvent.ACTION_UP -> {
-//                    R.id.editTextTextPassword.setTransformationMethod(PasswordTransformationMethod.getInstance())
-//                    Toast.makeText(context, "hide", Toast.LENGTH_SHORT).show()
-//                }
-//            }
-//        }
-//        return true
-//    }
+
 
 
 }

@@ -1,4 +1,4 @@
-package com.example.thewheeldeal.fragments
+package com.example.thewheeldeal
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,9 +9,6 @@ import android.widget.ImageView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.thewheeldeal.models.CustomAdapter
-import com.example.thewheeldeal.models.Items
-import com.example.thewheeldeal.R
 
 class Landing_fragment : Fragment() {
     // TODO: Rename and change types of parameters

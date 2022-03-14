@@ -1,4 +1,4 @@
-package com.example.thewheeldeal.fragments
+package com.example.thewheeldeal
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,9 +10,6 @@ import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.thewheeldeal.models.ChatAdapter
-import com.example.thewheeldeal.models.Items
-import com.example.thewheeldeal.R
 
 
 class Chat_fragment : Fragment() {
