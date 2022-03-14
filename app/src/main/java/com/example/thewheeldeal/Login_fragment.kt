@@ -1,20 +1,24 @@
 package com.example.thewheeldeal
 
 import android.os.Bundle
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.view.LayoutInflater
-import androidx.fragment.app.Fragment
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+
 
 class Login_fragment : Fragment() {
 
@@ -26,11 +30,6 @@ class Login_fragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_login, container, false)
     }
-//
-//    override fun onStart() {
-//        super.onStart()
-//        view?.let { checkLoggedInState(it) }
-//    }
 
 
 
@@ -76,6 +75,22 @@ class Login_fragment : Fragment() {
             view.findNavController().navigate(R.id.action_login_to_landing)
         }
     }
+//    fun onTouch(view: View, motionEvent: MotionEvent): Boolean {
+//        when (view.id) {
+//            R.id.Pass -> when (motionEvent.action) {
+//                MotionEvent.ACTION_DOWN -> {
+//                    Toast.makeText(context, "show", Toast.LENGTH_SHORT).show()
+//                    R.id.editTextTextPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance())
+//                }
+//                MotionEvent.ACTION_UP -> {
+//                    R.id.editTextTextPassword.setTransformationMethod(PasswordTransformationMethod.getInstance())
+//                    Toast.makeText(context, "hide", Toast.LENGTH_SHORT).show()
+//                }
+//            }
+//        }
+//        return true
+//    }
+
 
 }
 

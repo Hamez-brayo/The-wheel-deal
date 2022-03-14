@@ -82,5 +82,6 @@
     <string name="categoryicon_string" tools:ignore="DuplicateDefinition">categoryicon</string>
     <string name="_11_21am_string">11.21am</string>
     <string name="categoriesicon1_string">categoriesicon</string>
+    <string name="cpp_background_string">CPP_Background</string>
 
 </resources>

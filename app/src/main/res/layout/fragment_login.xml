@@ -106,15 +106,8 @@
         tools:ignore="TextContrastCheck,TextContrastCheck" />
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
-        app:passwordToggleEnabled="true" />
+    <!--       app:passwordTogglenabled="true"-->
+
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -137,8 +130,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailInput"
         tools:ignore="TextContrastCheck" />
-   <!--       app:passwordTogglenabled="true"-->
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+        app:passwordToggleEnabled="true" />
 
     <ProgressBar
         android:id="@+id/progressBar"
