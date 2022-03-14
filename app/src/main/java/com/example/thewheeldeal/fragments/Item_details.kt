@@ -1,4 +1,4 @@
-package com.example.thewheeldeal
+package com.example.thewheeldeal.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.findNavController
+import com.example.thewheeldeal.R
 
 class Item_details : Fragment() {
 
@@ -25,7 +26,7 @@ class Item_details : Fragment() {
             view.findNavController().navigate(R.id.action_item_details_to_landing)
         }
         view.findViewById<Button>(R.id.chatbutton)?.setOnClickListener {
-            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_item_details_to_chat)
+            view.findNavController().navigate(R.id.action_item_details_to_chat)
         }
 
     }

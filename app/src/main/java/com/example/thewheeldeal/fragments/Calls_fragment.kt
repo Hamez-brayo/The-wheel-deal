@@ -1,4 +1,4 @@
-package com.example.thewheeldeal
+package com.example.thewheeldeal.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,9 +10,12 @@ import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.thewheeldeal.models.CallAdapter
+import com.example.thewheeldeal.models.Items
+import com.example.thewheeldeal.R
 
 
-class Chat_fragment : Fragment() {
+class Calls_fragment : Fragment() {
 
 
     override fun onCreateView(
@@ -20,9 +23,8 @@ class Chat_fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chat, container, false)
+        return inflater.inflate(R.layout.fragment_calls, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -43,25 +45,25 @@ class Chat_fragment : Fragment() {
         }
 
         // This will pass the ArrayList to our Adapter
-        val adapter = ChatAdapter(data)
+        val adapter = CallAdapter(data)
 
         // Setting the Adapter with the recyclerview
         recyclerview?.adapter = adapter
 
-        view.findViewById<TextView>(R.id.textView19)?.setOnClickListener {
-            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_chat_to_calls)
+        view.findViewById<TextView>(R.id.textView18)?.setOnClickListener {
+            view.findNavController().navigate(R.id.action_calls_to_chat)
         }
         view.findViewById<ImageView>(R.id.imageView39)?.setOnClickListener {
-            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_chat_to_landing)
+            view.findNavController().navigate(R.id.action_calls_to_chat)
         }
         view.findViewById<ImageView>(R.id.imageView47)?.setOnClickListener {
-            view.findNavController()
-                .navigate(com.example.thewheeldeal.R.id.action_chat_to_categories)
+            view.findNavController().navigate(R.id.action_calls_to_categories)
         }
         view.findViewById<ImageView>(R.id.imageView45)?.setOnClickListener {
-            view.findNavController().navigate(com.example.thewheeldeal.R.id.action_chat_to_landing)
+            view.findNavController().navigate(R.id.action_calls_to_landing)
         }
-
-
     }
+
+
+
 }

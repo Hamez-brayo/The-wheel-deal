@@ -1,4 +1,4 @@
-package com.example.thewheeldeal
+package com.example.thewheeldeal.models
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -6,12 +6,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.thewheeldeal.R
 
 class CustomAdapter2(private val mList: List<Items>):RecyclerView.Adapter<CustomAdapter2.ViewHolder>()  {
 
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):ViewHolder{
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.landing_page_lists, parent, false)
 
@@ -41,7 +42,7 @@ class CustomAdapter2(private val mList: List<Items>):RecyclerView.Adapter<Custom
 
 
 
-    override fun onBindViewHolder(holder: CustomAdapter2.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         val ItemsViewModel = mList[position]
 

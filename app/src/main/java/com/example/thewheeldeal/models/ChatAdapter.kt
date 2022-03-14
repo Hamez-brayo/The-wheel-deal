@@ -1,4 +1,4 @@
-package com.example.thewheeldeal
+package com.example.thewheeldeal.models
 
 
 import android.view.LayoutInflater
@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.thewheeldeal.R
 
 
 class ChatAdapter(private val mList: List<Items>):RecyclerView.Adapter<ChatAdapter.ViewHolder>()  {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.chat_page_list, parent, false)
 
