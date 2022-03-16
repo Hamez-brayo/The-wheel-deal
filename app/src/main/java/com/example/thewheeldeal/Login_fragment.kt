@@ -70,7 +70,7 @@ import kotlinx.coroutines.withContext
 
     private fun checkLoggedInState(view: View) {
         if (auth.currentUser!=null){
-            //Toast.makeText( requireActivity(),"Field cant be empty", Toast.LENGTH_SHORT).show()
+
         }
         else{
             view.findNavController().navigate(R.id.action_login_to_landing)

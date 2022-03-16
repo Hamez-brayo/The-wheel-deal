@@ -90,20 +90,6 @@ class sign_up_fragment : Fragment() {
        view.findNavController().navigate(R.id.action_sign_up_to_landing)
    }
 }
-//fun onTouch(view: View, motionEvent: MotionEvent): Boolean {
-//    when (view.id) {
-//        R.id.PassConfirm -> when (motionEvent.action) {
-//            MotionEvent.ACTION_DOWN -> {
-//                Toast.makeText(getContext(), "show", Toast.LENGTH_SHORT).show()
-//                R.id.Password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD)
-//            }
-//            MotionEvent.ACTION_UP -> {
-//                Password.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD or InputType.TYPE_CLASS_TEXT)
-//                Toast.makeText(getContext(), "hide", Toast.LENGTH_SHORT).show()
-//            }
-//        }
-//    }
-//    return true
-//}
+
 
 
