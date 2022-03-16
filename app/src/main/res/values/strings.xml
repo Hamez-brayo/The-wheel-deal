@@ -83,5 +83,9 @@
     <string name="_11_21am_string">11.21am</string>
     <string name="categoriesicon1_string">categoriesicon</string>
     <string name="cpp_background_string">CPP_Background</string>
+    <string name="name_string">Name</string>
+    <string name="chatmenuicon_string">chatmenuicon</string>
+    <string name="inputtextfield_string">inputtextfield</string>
+    <string name="sendicon_string">sendicon</string>
 
 </resources>
