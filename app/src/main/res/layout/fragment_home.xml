@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -29,16 +30,12 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="409dp"
-        android:layout_height="336dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="387dp"
+        android:layout_height="322dp"
         android:contentDescription="@string/splashimage_string"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/splashimage_twd" />
 
     <ImageView
@@ -58,6 +55,7 @@
         android:id="@+id/button"
         android:layout_width="264dp"
         android:layout_height="53dp"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/let_s_go_string"
         android:textColor="@color/my_apptheme"
@@ -65,12 +63,11 @@
         android:typeface="normal"
         app:cornerRadius="34dp"
         app:iconPadding="34dp"
-        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.841" />
+        app:layout_constraintVertical_bias="0.716" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

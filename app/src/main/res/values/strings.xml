@@ -40,7 +40,6 @@
     <string name="profileicon_string" tools:ignore="DuplicateDefinition">profileicon</string>
     <string name="callicon_string">callicon</string>
     <string name="missedcallicon_string">missedcallicon</string>
-    <string name="name_string">Name</string>
     <string name="thanks_string">thanks🙂</string>
     <string name="bordericon_string">bordericon</string>
     <string name="receivedicon_string" tools:ignore="DuplicateDefinition">receivedicon</string>

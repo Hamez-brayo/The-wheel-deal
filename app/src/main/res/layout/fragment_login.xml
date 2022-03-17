@@ -9,9 +9,7 @@
         android:id="@+id/button4"
         android:layout_width="264dp"
         android:layout_height="53dp"
-        android:layout_marginStart="74dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="74dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/login_string"
@@ -20,9 +18,8 @@
         android:typeface="normal"
         app:cornerRadius="34dp"
         app:iconPadding="34dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/passforgot"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/passforgot" />
 
     <TextView
@@ -43,28 +40,28 @@
         android:id="@+id/passforgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/forgot_your_password_string"
         android:textColor="#DD2C00"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <TextView
         android:id="@+id/passforgot2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/dont_have_an_account_string"
         android:textColor="@color/black"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <TextView
@@ -76,20 +73,22 @@
         android:text="@string/sign_up_string"
         android:textColor="#DD2C00"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/passforgot2"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+
+    <!--       app:passwordTogglenabled="true"-->
+
 
     <EditText
         android:id="@+id/emailInput"
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
         android:layout_below="@+id/Welcome"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="120dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
         android:autofillHints=""
         android:background="#30000000"
         android:drawableStart="@drawable/ic_baseline_email_24"
@@ -100,22 +99,17 @@
         android:textColor="@color/my_apptheme"
         android:textColorHint="#455A64"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Welcome"
         tools:ignore="TextContrastCheck,TextContrastCheck" />
 
-
-    <!--       app:passwordTogglenabled="true"-->
-
-
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
         android:autofillHints="true"
         android:background="#30000000"
         android:drawableStart="@drawable/ic_baseline_info_24"
@@ -126,7 +120,6 @@
         android:textColor="@color/black"
         android:textColorHint="#455A64"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailInput"
         tools:ignore="TextContrastCheck" />
