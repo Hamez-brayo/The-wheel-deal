@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
 
@@ -26,10 +27,13 @@ class ChatAdapter(private val mList: List<Items>):RecyclerView.Adapter<ChatAdapt
         val imageView: ImageView = itemView.findViewById(R.id.imageView44)
 
         val textView: TextView = itemView.findViewById(R.id.textView17)
-//        init {
-//         itemView.setOnClickListener{
-//                itemView.findNavController().navigate(R.id.action_landing_to_item_details)
-//            }
+        init {
+         itemView.setOnClickListener{
+                itemView.findNavController().navigate(R.id.action_chat_to_conv_fragment)
+            }
+        }
+//        itemView.setOnClickListener{
+//            itemView.findNavController().navigate(R.id.action_landing_to_item_details)
 //        }
     }
 

@@ -21,9 +21,7 @@ class ConvAdapter(private val mList: List<Items>): RecyclerView.Adapter<ConvAdap
         init {
             val imageView: ImageView = itemView.findViewById(R.id.imageView15)
             val textView: TextView = itemView.findViewById(R.id.textView)
-            itemView.setOnClickListener{
-                itemView.findNavController().navigate(R.id.action_landing_to_item_details)
-            }
+
         }
     }
     override fun onBindViewHolder(holder: ConvAdapter.ViewHolder, position: Int) {
