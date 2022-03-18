@@ -127,6 +127,9 @@
         <action
             android:id="@+id/action_chat_to_landing2"
             app:destination="@id/landing" />
+        <action
+            android:id="@+id/action_chat_to_conv_fragment"
+            app:destination="@id/conv_fragment" />
     </fragment>
     <fragment
         android:id="@+id/calls"
@@ -142,4 +145,9 @@
             android:id="@+id/action_calls_to_categories"
             app:destination="@id/categories" />
     </fragment>
+    <fragment
+        android:id="@+id/conv_fragment"
+        android:name="com.example.thewheeldeal.conv_fragment"
+        android:label="fragment_conv_fragment"
+        tools:layout="@layout/fragment_conv_fragment" />
 </navigation>
