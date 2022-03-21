@@ -33,12 +33,12 @@ class conv_fragment : Fragment() {
 
         // This loop will create 20 Views containing
         // the image with the count of view
-        for (i in 1..20) {
-            data.add(Items(R.drawable.rectangle_icons, "Item " + i))
+        for (i in 1..1) {
+            data.add(Items(R.drawable.rectangle_icons, "Message " + i))
         }
 
         // This will pass the ArrayList to our Adapter
-        val adapter = CustomAdapter(data)
+        val adapter = ConvAdapter(data)
 
         // Setting the Adapter with the recyclerview
         recyclerview?.adapter = adapter
