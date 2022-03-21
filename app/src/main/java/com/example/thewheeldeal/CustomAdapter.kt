@@ -1,6 +1,5 @@
 package com.example.thewheeldeal
 
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,12 +20,15 @@ class CustomAdapter(private val mList: List<Items>):RecyclerView.Adapter<CustomA
     override fun getItemCount(): Int {
         return mList.size
     }
+
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageView15)
         val textView: TextView = itemView.findViewById(R.id.textView)
+
         init {
             val imageView: ImageView = itemView.findViewById(R.id.imageView15)
             val textView: TextView = itemView.findViewById(R.id.textView)
+
             itemView.setOnClickListener{
                 itemView.findNavController().navigate(R.id.action_landing_to_item_details)
             }

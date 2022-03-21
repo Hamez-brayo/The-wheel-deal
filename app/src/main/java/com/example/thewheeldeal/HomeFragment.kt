@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
 
-
 class HomeFragment : Fragment() {
 
     override fun onCreateView(

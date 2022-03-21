@@ -1,6 +1,5 @@
 package com.example.thewheeldeal
 
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,10 +16,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-
 class sign_up_fragment : Fragment() {
 
     lateinit var auth:FirebaseAuth
+
     override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -29,6 +28,7 @@ class sign_up_fragment : Fragment() {
 
         }
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -40,16 +40,18 @@ class sign_up_fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         auth= FirebaseAuth.getInstance()
+
         view.findViewById<Button>(R.id.button5).setOnClickListener{
            RegisterUser(view, auth)
 
         }
+
         view.findViewById<TextView>(R.id.Login).setOnClickListener{
             view.findNavController().navigate(R.id.action_sign_up_to_login)
         }
-        }
-
     }
+
+}
 
     private fun RegisterUser(view: View, auth: FirebaseAuth) {
         val Fname= view.findViewById<EditText>(R.id.FirstName).text.toString()
@@ -60,8 +62,8 @@ class sign_up_fragment : Fragment() {
         val Contact= view.findViewById<EditText>(R.id.Cont).text.toString()
         val password= view.findViewById<EditText>(R.id.Password).text.toString()
         val ConfirmPass= view.findViewById<EditText>(R.id.PassCon).text.toString()
-        if (Fname.isNotEmpty()&&Lname.isNotEmpty()&&IdNo.isNotEmpty()&&Email.isNotEmpty()&&countrypick.isNotEmpty()&&Contact.isNotEmpty()&&password.isNotEmpty()&&ConfirmPass.isNotEmpty())
-        {
+
+        if (Fname.isNotEmpty()&&Lname.isNotEmpty()&&IdNo.isNotEmpty()&&Email.isNotEmpty()&&countrypick.isNotEmpty()&&Contact.isNotEmpty()&&password.isNotEmpty()&&ConfirmPass.isNotEmpty()) {
             CoroutineScope(Dispatchers.IO).launch {
                 try {
                     auth.createUserWithEmailAndPassword(Email,password)
@@ -75,9 +77,6 @@ class sign_up_fragment : Fragment() {
                 }
             }
         }
-
-
-
     }
 
  fun checkLoggedInState(view: View, auth: FirebaseAuth) {

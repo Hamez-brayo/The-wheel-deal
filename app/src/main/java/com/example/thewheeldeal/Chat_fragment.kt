@@ -11,9 +11,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-
 class Chat_fragment : Fragment() {
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,17 +48,18 @@ class Chat_fragment : Fragment() {
         view.findViewById<TextView>(R.id.textView19)?.setOnClickListener {
             view.findNavController().navigate(R.id.action_chat_to_calls)
         }
+
         view.findViewById<ImageView>(R.id.imageView39)?.setOnClickListener {
             view.findNavController().navigate(R.id.action_chat_to_landing)
         }
+
         view.findViewById<ImageView>(R.id.imageView47)?.setOnClickListener {
             view.findNavController()
                 .navigate(R.id.action_chat_to_categories)
         }
+
         view.findViewById<ImageView>(R.id.imageView45)?.setOnClickListener {
             view.findNavController().navigate(R.id.action_chat_to_landing)
         }
-
-
     }
 }

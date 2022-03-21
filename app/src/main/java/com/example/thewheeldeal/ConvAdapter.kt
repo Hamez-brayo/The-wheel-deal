@@ -7,12 +7,14 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class ConvAdapter(private val mList: List<Items>): RecyclerView.Adapter<ConvAdapter.ViewHolder>()  {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ConvAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.user_chat_list, parent, false)
 
         return ConvAdapter.ViewHolder(view)
     }
+
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val textView: TextView = itemView.findViewById(R.id.chat_bubble)
         init {
@@ -20,6 +22,7 @@ class ConvAdapter(private val mList: List<Items>): RecyclerView.Adapter<ConvAdap
 
         }
     }
+
     override fun onBindViewHolder(holder: ConvAdapter.ViewHolder, position: Int) {
         val ItemsViewModel = mList[position]
 

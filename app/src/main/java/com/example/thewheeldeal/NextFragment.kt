@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
 
-
 class NextFragment : Fragment() {
 
     override fun onCreateView(
@@ -27,6 +26,4 @@ class NextFragment : Fragment() {
             view.findNavController().navigate(R.id.action_nextFragment2_to_login)
         }
     }
-
-
 }

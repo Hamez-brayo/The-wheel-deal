@@ -14,16 +14,16 @@ class CallAdapter(private val mList: List<Items>): RecyclerView.Adapter<ChatAdap
 
         return ChatAdapter.ViewHolder(view)
     }
+
     override fun getItemCount(): Int {
         return mList.size
     }
+
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-
-
         val imageView: ImageView = itemView.findViewById(R.id.imageView52)
-
         val textView: TextView = itemView.findViewById(R.id.textView17)
     }
+
     override fun onBindViewHolder(holder: ChatAdapter.ViewHolder, position: Int) {
         val ItemsViewModel = mList[position]
 
@@ -33,6 +33,4 @@ class CallAdapter(private val mList: List<Items>): RecyclerView.Adapter<ChatAdap
         // sets the text to the textview from our itemHolder class
         holder.textView.text = ItemsViewModel.text
     }
-
-
 }

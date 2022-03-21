@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView
 
 class Calls_fragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -22,6 +21,7 @@ class Calls_fragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_calls, container, false)
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -49,17 +49,17 @@ class Calls_fragment : Fragment() {
         view.findViewById<TextView>(R.id.textView18)?.setOnClickListener {
             view.findNavController().navigate(R.id.action_calls_to_chat)
         }
+
         view.findViewById<ImageView>(R.id.imageView39)?.setOnClickListener {
             view.findNavController().navigate(R.id.action_calls_to_chat)
         }
+
         view.findViewById<ImageView>(R.id.imageView47)?.setOnClickListener {
             view.findNavController().navigate(R.id.action_calls_to_categories)
         }
+
         view.findViewById<ImageView>(R.id.imageView45)?.setOnClickListener {
             view.findNavController().navigate(R.id.action_calls_to_landing)
         }
     }
-
-
-
 }

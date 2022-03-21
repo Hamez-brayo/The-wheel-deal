@@ -9,8 +9,8 @@ import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
-
 class ChatAdapter(private val mList: List<Items>):RecyclerView.Adapter<ChatAdapter.ViewHolder>()  {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.chat_page_list, parent, false)
@@ -21,12 +21,11 @@ class ChatAdapter(private val mList: List<Items>):RecyclerView.Adapter<ChatAdapt
     override fun getItemCount(): Int {
         return mList.size
     }
+
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-
-
         val imageView: ImageView = itemView.findViewById(R.id.imageView44)
-
         val textView: TextView = itemView.findViewById(R.id.textView17)
+
         init {
          itemView.setOnClickListener{
                 itemView.findNavController().navigate(R.id.action_chat_to_conv_fragment)
@@ -43,5 +42,4 @@ class ChatAdapter(private val mList: List<Items>):RecyclerView.Adapter<ChatAdapt
         // sets the text to the textview from our itemHolder class
         holder.textView.text = ItemsViewModel.text
     }
-
 }

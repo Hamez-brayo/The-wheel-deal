@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 
 class conv_fragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -18,6 +17,7 @@ class conv_fragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_conv_fragment, container, false)
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -41,6 +41,5 @@ class conv_fragment : Fragment() {
 
         // Setting the Adapter with the recyclerview
         recyclerview?.adapter = adapter
+    }
 }
-
-  }

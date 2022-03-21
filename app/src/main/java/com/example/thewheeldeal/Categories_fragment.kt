@@ -13,8 +13,6 @@ import androidx.recyclerview.widget.RecyclerView
 
 class Categories_fragment : Fragment() {
 
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -51,10 +49,10 @@ class Categories_fragment : Fragment() {
             view.findNavController()
                 .navigate(R.id.action_categories_to_landing)
         }
+
         view.findViewById<ImageView>(R.id.imageView34)?.setOnClickListener {
             view.findNavController()
                 .navigate(R.id.action_categories_to_chat)
         }
     }
-
 }
