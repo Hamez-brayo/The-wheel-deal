@@ -23,11 +23,6 @@ class CallAdapter(private val mList: List<Items>): RecyclerView.Adapter<ChatAdap
         val imageView: ImageView = itemView.findViewById(R.id.imageView52)
 
         val textView: TextView = itemView.findViewById(R.id.textView17)
-//        init {
-//         itemView.setOnClickListener{
-//                itemView.findNavController().navigate(R.id.action_landing_to_item_details)
-//            }
-//        }
     }
     override fun onBindViewHolder(holder: ChatAdapter.ViewHolder, position: Int) {
         val ItemsViewModel = mList[position]

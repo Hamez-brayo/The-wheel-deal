@@ -23,7 +23,6 @@
 
     <EditText
         android:id="@+id/search"
-
         android:layout_width="254dp"
         android:layout_height="53dp"
         android:autofillHints=""

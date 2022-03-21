@@ -3,7 +3,6 @@ package com.example.thewheeldeal
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -15,10 +14,8 @@ class ConvAdapter(private val mList: List<Items>): RecyclerView.Adapter<ConvAdap
         return ConvAdapter.ViewHolder(view)
     }
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-        //val imageView: ImageView = itemView.findViewById(R.id.imageView15)
         val textView: TextView = itemView.findViewById(R.id.chat_bubble)
         init {
-           // val imageView: ImageView = itemView.findViewById(R.id.imageView15)
             val textView: TextView = itemView.findViewById(R.id.chat_bubble)
 
         }

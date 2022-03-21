@@ -44,9 +44,6 @@ class sign_up_fragment : Fragment() {
            RegisterUser(view, auth)
 
         }
-//        view.findViewById<Button>(R.id.button5).setOnClickListener {
-//            view.findNavController().navigate(R.id.action_sign_up_to_landing)
-//        }
         view.findViewById<TextView>(R.id.Login).setOnClickListener{
             view.findNavController().navigate(R.id.action_sign_up_to_login)
         }

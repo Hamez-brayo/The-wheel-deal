@@ -88,5 +88,6 @@
     <string name="sendicon_string">sendicon</string>
     <string name="message_string">Message</string>
     <string name="hello_string">Hello</string>
+    <string name="categories_icon_string">categories icon</string>
 
 </resources>

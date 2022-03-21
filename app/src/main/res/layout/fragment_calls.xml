@@ -148,7 +148,7 @@
         android:layout_width="37dp"
         android:layout_height="37dp"
         android:layout_marginStart="56dp"
-        android:contentDescription="categories icon"
+        android:contentDescription="@string/categories_icon_string"
         android:src="@drawable/ic_baseline_category_24"
         app:layout_constraintBottom_toTopOf="@+id/_homeicon6"
         app:layout_constraintStart_toEndOf="@+id/imageView45"

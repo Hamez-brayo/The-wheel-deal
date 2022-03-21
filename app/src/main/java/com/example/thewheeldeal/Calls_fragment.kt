@@ -30,7 +30,6 @@ class Calls_fragment : Fragment() {
 
         // this creates a vertical layout Manager
         recyclerview?.layoutManager = LinearLayoutManager(requireActivity())
-//        recyclerview.setLayoutManager( LinearLayoutManager(getContext()));
 
         // ArrayList of class ItemsViewModel
         val data = ArrayList<Items>()

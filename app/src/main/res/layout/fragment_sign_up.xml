@@ -74,21 +74,8 @@
         app:layout_constraintStart_toStartOf="@+id/radioButton"
         app:layout_constraintTop_toBottomOf="@+id/radioButton" />
 
-    <!--    <com.google.android.material.textfield.TextInputLayout-->
-    <!--        android:id="@+id/Pass"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_centerInParent="true"-->
-
-    <!--        android:layout_marginEnd="4dp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="@+id/editText7"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/editText7"-->
-    <!--        app:layout_constraintTop_toTopOf="@+id/editText7"-->
-    <!--        app:passwordToggleEnabled="true" />-->
-
     <EditText
         android:id="@+id/FirstName"
-
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
@@ -108,7 +95,6 @@
 
     <EditText
         android:id="@+id/LastName"
-
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -127,7 +113,6 @@
 
     <EditText
         android:id="@+id/IdNum"
-
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -146,7 +131,6 @@
 
     <EditText
         android:id="@+id/email"
-
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -203,7 +187,6 @@
 
     <EditText
         android:id="@+id/Password"
-
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -231,7 +214,6 @@
 
     <EditText
         android:id="@+id/PassCon"
-
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"

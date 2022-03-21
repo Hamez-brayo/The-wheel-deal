@@ -69,7 +69,7 @@ import kotlinx.coroutines.withContext
 
 
     private fun checkLoggedInState(view: View) {
-        if (auth.currentUser!=null){
+        if (auth.currentUser==null){
 
         }
         else{

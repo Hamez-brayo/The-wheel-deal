@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.findNavController
-import com.example.thewheeldeal.R
 
 class Item_details : Fragment() {
 

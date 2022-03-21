@@ -32,9 +32,6 @@ class ChatAdapter(private val mList: List<Items>):RecyclerView.Adapter<ChatAdapt
                 itemView.findNavController().navigate(R.id.action_chat_to_conv_fragment)
             }
         }
-//        itemView.setOnClickListener{
-//            itemView.findNavController().navigate(R.id.action_landing_to_item_details)
-//        }
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
