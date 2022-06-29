@@ -8,6 +8,18 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="add_car">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1082" />
+                            <option name="y" value="-747" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="calls">
                     <value>
                       <LayoutPositions>
@@ -87,6 +99,11 @@
                               </value>
                             </entry>
                             <entry key="action_chat_to_categories">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_chat_to_conv_fragment">
                               <value>
                                 <LayoutPositions />
                               </value>

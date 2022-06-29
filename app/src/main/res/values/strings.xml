@@ -89,5 +89,23 @@
     <string name="message_string">Message</string>
     <string name="hello_string">Hello</string>
     <string name="categories_icon_string">categories icon</string>
+    <string name="addbackgound">TODO</string>
+    <string name="AddButton">TODO</string>
+    <string name="Add">TextView</string>
+    <string name="add">Add</string>
+    <string name="enter_car_type_here_string">Enter car type here</string>
+    <string name="enter_model_type_here_string">string</string>
+    <string name="enter_model_type_heree_string">Enter Model type here</string>
+    <string name="add_car">Add Car</string>
+    <string name="type">Type:</string>
+    <string name="model">Model:</string>
+    <string name="mercedes_string">Mercedes</string>
+    <string name="benz">Benz</string>
+    <string name="kcw_201e_string">KCW 201E</string>
+    <string name="regno_string">RegNo</string>
+    <string name="image_string">Image</string>
+    <string name="add_image_string">add image</string>
+    <string name="select_image_string">select image</string>
+    <string name="descriptiontb_string">Description:</string>
 
 </resources>

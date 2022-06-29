@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -51,5 +52,21 @@ class Landing_fragment : Fragment() {
         view.findViewById<ImageView>(R.id.imageView23).setOnClickListener {
             view.findNavController().navigate(R.id.action_landing_to_chat)
         }
+//        view.findViewById<ImageView>(R.id.imageView18).setOnClickListener {
+//            Override fun onClick (view: View){
+//
+//            }
+//
+//
+//        }
+        view.findViewById<ImageView>(R.id.imageView18).setOnClickListener{
+           AddCarDialogue(
+               onSubmitClickListener =  { quantity->
+                   Toast.makeText(requireContext(), " ", Toast.LENGTH_SHORT).show()
+               }
+           ).show(parentFragmentManager, "dialog")
+       }
+
+
     }
 }
