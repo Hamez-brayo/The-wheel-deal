@@ -107,5 +107,6 @@
     <string name="add_image_string">add image</string>
     <string name="select_image_string">select image</string>
     <string name="descriptiontb_string">Description:</string>
+    <string name="descriptions_string">Description</string>
 
 </resources>
