@@ -8,13 +8,13 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="add_car">
+                  <entry key="addCar">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1082" />
-                            <option name="y" value="-747" />
+                            <option name="x" value="1308" />
+                            <option name="y" value="551" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -25,8 +25,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="728" />
-                            <option name="y" value="-386" />
+                            <option name="x" value="723" />
+                            <option name="y" value="-502" />
                           </Point>
                         </option>
                         <option name="myPositions">

@@ -161,7 +161,7 @@
                 android:elegantTextHeight="true"
                 android:fontFamily="sans-serif"
                 android:textColor="@color/my_apptheme"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
