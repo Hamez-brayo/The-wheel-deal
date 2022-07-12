@@ -54,7 +54,8 @@ class Landing_fragment : Fragment() {
         }
 
         view.findViewById<ImageView>(R.id.imageView18).setOnClickListener{
-            view.findNavController().navigate(R.id.action_landing_to_addCar)
+            view.findNavController().navigate(R.id.action_landing_to_car_Add)
+
         }
 
 

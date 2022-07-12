@@ -260,7 +260,7 @@
             app:srcCompat="@drawable/rectangle" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/editTextTextMultiLineInput"
             android:layout_width="172dp"
             android:layout_height="150dp"
             android:autofillHints=""

@@ -62,8 +62,8 @@
             android:id="@+id/action_landing_to_chat"
             app:destination="@id/chat" />
         <action
-            android:id="@+id/action_landing_to_addCar"
-            app:destination="@id/addCar" />
+            android:id="@+id/action_landing_to_car_Add"
+            app:destination="@id/car_Add" />
     </fragment>
     <fragment
         android:id="@+id/login"
@@ -95,8 +95,8 @@
             android:id="@+id/action_categories_to_chat"
             app:destination="@id/chat" />
         <action
-            android:id="@+id/action_categories_to_addCar"
-            app:destination="@id/addCar" />
+            android:id="@+id/action_categories_to_car_Add"
+            app:destination="@id/car_Add" />
     </fragment>
     <fragment
         android:id="@+id/item_details"
@@ -137,8 +137,8 @@
             android:id="@+id/action_chat_to_conv_fragment"
             app:destination="@id/conv_fragment" />
         <action
-            android:id="@+id/action_chat_to_addCar"
-            app:destination="@id/addCar" />
+            android:id="@+id/action_chat_to_car_Add"
+            app:destination="@id/car_Add" />
     </fragment>
     <fragment
         android:id="@+id/calls"
@@ -153,30 +153,14 @@
         <action
             android:id="@+id/action_calls_to_categories"
             app:destination="@id/categories" />
-        <action
-            android:id="@+id/action_calls_to_addCar"
-            app:destination="@id/addCar" />
     </fragment>
     <fragment
         android:id="@+id/conv_fragment"
         android:name="com.example.thewheeldeal.conv_fragment"
         android:label="fragment_conv_fragment"
         tools:layout="@layout/fragment_conv_fragment" />
-    <fragment
-        android:id="@+id/addCar"
-        android:name="com.example.thewheeldeal.addCar"
-        android:label="addCar" >
-        <action
-            android:id="@+id/action_addCar_to_categories"
-            app:destination="@id/categories" />
-        <action
-            android:id="@+id/action_addCar_to_landing"
-            app:destination="@id/landing" />
-        <action
-            android:id="@+id/action_addCar_to_chat"
-            app:destination="@id/chat" />
-        <action
-            android:id="@+id/action_addCar_to_calls"
-            app:destination="@id/calls" />
-    </fragment>
+    <activity
+        android:id="@+id/car_Add"
+        android:name="com.example.thewheeldeal.Car_Add"
+        android:label="Car_Add" />
 </navigation>
