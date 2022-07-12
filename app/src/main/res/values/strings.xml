@@ -108,5 +108,6 @@
     <string name="select_image_string">select image</string>
     <string name="descriptiontb_string">Description:</string>
     <string name="descriptions_string">Description</string>
+    <string name="user_profile_string">Profile</string>
 
 </resources>

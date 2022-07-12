@@ -1,5 +1,6 @@
 package com.example.thewheeldeal
 
+import android.media.Image
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -56,6 +57,9 @@ class Landing_fragment : Fragment() {
         view.findViewById<ImageView>(R.id.imageView18).setOnClickListener{
             view.findNavController().navigate(R.id.action_landing_to_car_Add)
 
+        }
+        view.findViewById<ImageView>(R.id.imageView24).setOnClickListener{
+            view.findNavController().navigate(R.id.action_landing_to_userProfileActivity)
         }
 
 

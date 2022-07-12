@@ -64,6 +64,9 @@
         <action
             android:id="@+id/action_landing_to_car_Add"
             app:destination="@id/car_Add" />
+        <action
+            android:id="@+id/action_landing_to_userProfileActivity"
+            app:destination="@id/userProfileActivity" />
     </fragment>
     <fragment
         android:id="@+id/login"
@@ -97,6 +100,9 @@
         <action
             android:id="@+id/action_categories_to_car_Add"
             app:destination="@id/car_Add" />
+        <action
+            android:id="@+id/action_categories_to_userProfileActivity"
+            app:destination="@id/userProfileActivity" />
     </fragment>
     <fragment
         android:id="@+id/item_details"
@@ -139,6 +145,9 @@
         <action
             android:id="@+id/action_chat_to_car_Add"
             app:destination="@id/car_Add" />
+        <action
+            android:id="@+id/action_chat_to_userProfileActivity"
+            app:destination="@id/userProfileActivity" />
     </fragment>
     <fragment
         android:id="@+id/calls"
@@ -163,4 +172,9 @@
         android:id="@+id/car_Add"
         android:name="com.example.thewheeldeal.Car_Add"
         android:label="Car_Add" />
+    <activity
+        android:id="@+id/userProfileActivity"
+        android:name="com.example.thewheeldeal.UserProfileActivity"
+        android:label="activity_user_profile"
+        tools:layout="@layout/activity_user_profile" />
 </navigation>

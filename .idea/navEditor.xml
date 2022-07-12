@@ -82,6 +82,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_categories_to_userProfileActivity">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                           </map>
                         </option>
                       </LayoutPositions>
@@ -129,6 +134,11 @@
                               </value>
                             </entry>
                             <entry key="action_chat_to_landing2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_chat_to_userProfileActivity">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -233,6 +243,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_landing_to_userProfileActivity">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                           </map>
                         </option>
                       </LayoutPositions>
@@ -312,6 +327,18 @@
                               </value>
                             </entry>
                           </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="userProfileActivity">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>

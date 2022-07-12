@@ -15,4 +15,5 @@
     <color name="maintheme">#0000FF</color>
     <color name="tb_background">#30000000</color>
     <color name="addbackcolor">#FBF2E2</color>
+    <color name="gradient">#F7FF00</color>
 </resources>
