@@ -26,7 +26,7 @@ class Car_Add : AppCompatActivity() {
         binding =ActivityCarAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.imageView64.setOnClickListener{
+        binding.ivCarPhoto.setOnClickListener{
 
             selectImage()
         }
@@ -54,7 +54,7 @@ class Car_Add : AppCompatActivity() {
 
         if (requestCode==100&& resultCode== RESULT_OK){
             ImageUri=data?.data!!
-            binding.imageView64.setImageURI(ImageUri)
+            binding.ivCarPhoto.setImageURI(ImageUri)
 
 //
 //            binding.imageView65.isVisible(false)
@@ -70,17 +70,13 @@ class Car_Add : AppCompatActivity() {
         val formatter = SimpleDateFormat("yyyy_MM_dd_HH_mm_ss", Locale.getDefault())
         val now =Date()
         val fileName=formatter.format(now)
-        val CarType= findViewById<EditText>(R.id.typeInput)
-        val CarModel=findViewById<EditText>(R.id.modelInput)
-        val PlateNum= findViewById<EditText>(R.id.RegNoInput)
-        val CarDescriptor= findViewById<EditText>(R.id.editTextTextMultiLineInput)
 
 
 
         val storageReference = FirebaseStorage.getInstance().getReference("images/$fileName")
         storageReference.putFile(ImageUri).
                 addOnSuccessListener{
-                    binding.imageView64.setImageURI(null)
+                    binding.ivCarPhoto.setImageURI(null)
                     Toast.makeText(this@Car_Add, "Successfully uploaded", Toast.LENGTH_SHORT).show()
                     if (progressDialog.isShowing)progressDialog.dismiss()
 

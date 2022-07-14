@@ -18,7 +18,6 @@ import kotlinx.coroutines.withContext
  class Login_fragment : Fragment() {
 
     lateinit var auth: FirebaseAuth
-    private lateinit var progressDialog: ProgressDialog
 
 
     override fun onCreateView(
