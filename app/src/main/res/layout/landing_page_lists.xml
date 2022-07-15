@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     app:cardCornerRadius="12dp"
     android:backgroundTint="#EAE9E9"
@@ -9,13 +10,24 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textColor="#616161"
+            app:layout_constraintEnd_toEndOf="@+id/imageView15"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="@+id/imageView15"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
 
         <ImageView
             android:id="@+id/imageView15"
-            android:layout_width="154dp"
-            android:layout_height="199dp"
+            android:layout_width="149dp"
+            android:layout_height="195dp"
             android:contentDescription="@string/carpicture_string"
             android:elevation="3dp"
             android:src="@drawable/subaru"
@@ -29,12 +41,12 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/description_string"
+            android:text="Car Model"
             android:textColor="#616161"
+            app:layout_constraintBottom_toTopOf="@+id/imageView15"
             app:layout_constraintEnd_toEndOf="@+id/imageView15"
-            app:layout_constraintHorizontal_bias="0.48"
-            app:layout_constraintStart_toStartOf="@+id/imageView15"
-            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/imageView15" />" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

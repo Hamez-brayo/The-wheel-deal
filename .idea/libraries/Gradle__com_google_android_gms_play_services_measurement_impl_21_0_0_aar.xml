@@ -1,9 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-measurement-impl:21.0.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b2ed34993527f843546341ad8fad9092/transformed/play-services-measurement-impl-21.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a859054f9cac9816920852c354cae4d3/transformed/play-services-measurement-impl-21.0.0/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a859054f9cac9816920852c354cae4d3/transformed/play-services-measurement-impl-21.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a859054f9cac9816920852c354cae4d3/transformed/play-services-measurement-impl-21.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a859054f9cac9816920852c354cae4d3/transformed/play-services-measurement-impl-21.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>

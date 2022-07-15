@@ -25,10 +25,10 @@ class CallAdapter(private val mList: List<Items>): RecyclerView.Adapter<ChatAdap
     }
 
     override fun onBindViewHolder(holder: ChatAdapter.ViewHolder, position: Int) {
-        val ItemsViewModel = mList[position]
+        var ItemsViewModel = mList[position]
 
         // sets the image to the imageview from our itemHolder class
-        holder.imageView.setImageResource(ItemsViewModel.image)
+       // holder.imageView.setImageResource(ItemsViewModel.image)
 
         // sets the text to the textview from our itemHolder class
         holder.textView.text = ItemsViewModel.text
