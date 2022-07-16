@@ -3,13 +3,12 @@ package com.example.thewheeldeal
 import android.app.ProgressDialog
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.util.Log
+import android.text.format.DateFormat
 import android.webkit.MimeTypeMap
-import android.widget.TextView
+import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.thewheeldeal.databinding.ActivityCarAddBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -27,9 +26,28 @@ class Car_Add : AppCompatActivity() {
     private var mDatabaseRef: DatabaseReference? = null
     private var mUploadTask: StorageTask<*>? = null
     private val PICK_IMAGE_REQUEST = 1
+//    private lateinit var _type:EditText
+//    private lateinit var _model:EditText
+//    private lateinit var _regNo:EditText
+//    private lateinit var _price:EditText
+//    private lateinit var _description:EditText
 
+
+//    var _model=binding.etModel.text.toString()
+//    var _type=binding.etType.text.toString()
+//    var _regNo=binding.etRegNo.text.toString()
+//    var _price= binding.etPrice.text.toString()
+//    var _description=binding.etDescription.text.toString()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+         //   _type = findViewById(R.id.et_type)
+//            _model= findViewById(R.id.et_model)
+//            _regNo=findViewById(R.id.et_RegNo)
+//            _price=findViewById(R.id.et_price)
+//            _description=findViewById(R.id.et_description)
+
         binding =ActivityCarAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -41,12 +59,81 @@ class Car_Add : AppCompatActivity() {
 
         binding.ivCarPhoto.setOnClickListener{
 
-            selectImage()
+            //selectImage()
         }
         binding.imageView62.setOnClickListener{
+            val type= binding.etType.text.toString()
+            val model = binding.etModel.text.toString()
+            val numPlate= binding.etRegNo.text.toString()
+            val pricing=binding.etPrice.text.toString()
+            val descr=binding.etDescription.text.toString()
+            mDatabaseRef = FirebaseDatabase.getInstance().getReference("cars_uploads")
+            val car=Cars(type,model,numPlate,pricing,descr)
+            mDatabaseRef?.child(numPlate)?.setValue(car)?.addOnSuccessListener {
+                binding.etType.text.clear()
+                binding.etModel.text.clear()
+                binding.etRegNo.text.clear()
+                binding.etPrice.text.clear()
+                binding.etDescription.text.clear()
 
-            uploadFile()
+                Toast.makeText(this, "Car Listing Uploaded successfully", Toast.LENGTH_SHORT).show()
+            }?.addOnFailureListener {
+
+                Toast.makeText(this, "Error in Uploading The Car Listing", Toast.LENGTH_SHORT).show()
+
+
+            }
+
+
+            //uploadFile()
+           //saveCarData()
         }
+    }
+
+    private fun saveCarData() {
+//        val model= _model.text.toString()
+//        val type=_type.text.toString()
+//        val plateNum=_regNo.text.toString()
+//        val price=_price.text.toString()
+//        val description=_description.text.toString()
+//
+//        if (model.isEmpty()){
+//            _model; " Please enter the model of the Car"
+//
+//        }
+//        if (type.isEmpty()){
+//            _type;" Please enter the type of the Car"
+//
+//        }
+//        if (plateNum.isEmpty()){
+//            _regNo;" Please enter the registration number of the Car"
+//
+//        }
+//        if (price.isEmpty()){
+//            _price;" Please enter the pricing of the Car per day"
+//
+//        }
+//        if (description.isEmpty()){
+//            _description;" Please enter the description of the Car"
+//
+//        }
+//
+//        val carId= mDatabaseRef?.push()?.key!!
+//
+//            val Cars = Cars(carId, model,type,plateNum,price,description)
+//        mDatabaseRef = FirebaseDatabase.getInstance().getReference("cars_uploads")
+//
+//        mDatabaseRef?.child(carId)?.setValue(Cars)
+//            ?.addOnCompleteListener{
+//                Toast.makeText(this, " Car Uploaded successfully", Toast.LENGTH_LONG).show()
+//
+//            }?.addOnFailureListener{err->
+//                Toast.makeText(this, "Error in uploading the listing ${err.message}", Toast.LENGTH_LONG).show()
+//
+//            }
+
+
+
     }
 
 
@@ -80,35 +167,7 @@ class Car_Add : AppCompatActivity() {
         return mime.getExtensionFromMimeType(cR.getType(uri))
     }
 
-//    private fun uploadImage(){
-//
-//        val progressDialog=ProgressDialog(this)
-//        progressDialog.setMessage("Uploading Listing...")
-//        progressDialog.setCancelable(false)
-//        progressDialog.show()
-//
-//        val formatter = SimpleDateFormat("yyyy_MM_dd_HH_mm_ss", Locale.getDefault())
-//        val now =Date()
-//        val fileName=formatter.format(now)
-//
-//
-//
-//        val storageReference = FirebaseStorage.getInstance().getReference("images/$fileName")
-//        storageReference.putFile(ImageUri).
-//                addOnSuccessListener{
-//                    binding.ivCarPhoto.setImageURI(null)
-//                    Toast.makeText(this@Car_Add, "Successfully uploaded", Toast.LENGTH_SHORT).show()
-//                    if (progressDialog.isShowing)progressDialog.dismiss()
-//
-//                }.addOnFailureListener{
-//                    if(progressDialog.isShowing)progressDialog.dismiss()
-//            Toast.makeText(this@Car_Add,"failed",Toast.LENGTH_SHORT).show()
-//
-//        }
-//
-//
-//
-//    }
+
 
     private fun uploadFile() {
 
@@ -120,17 +179,8 @@ class Car_Add : AppCompatActivity() {
         val formatter = SimpleDateFormat("yyyy_MM_dd_HH_mm_ss", Locale.getDefault())
         val now = Date()
         val fileName=formatter.format(now)
-        val upload = Items(
-            text =findViewById<TextView>(R.id.et_type).text.toString().trim { it <= ' ' },
-            model =findViewById<TextView>(R.id.et_model).text.toString().trim { it <= ' ' },
-            plateNum =findViewById<TextView>(R.id.et_RegNo).text.toString().trim { it <= ' ' },
-            price =findViewById<TextView>(R.id.et_price).text.toString().trim { it <= ' ' },
-            description =  findViewById<TextView>(R.id.et_description).text.toString().trim { it <= ' ' }
 
-        )
-        val uploadId = mDatabaseRef!!.push().key
-        mDatabaseRef!!.child((uploadId)!!).setValue(upload)
-        openImagesActivity()
+
 
 
         val storageReference = FirebaseStorage.getInstance().getReference("images/$fileName")
@@ -146,41 +196,8 @@ class Car_Add : AppCompatActivity() {
 
 
         }
-//        if (ImageUri != null) {
-//            val fileReference = mStorageRef!!.child(
-//                System.currentTimeMillis()
-//                    .toString() + "." + getFileExtension(ImageUri!!)
-//            )
-//
-//            mUploadTask = fileReference.putFile(ImageUri!!)
-//                .addOnSuccessListener { taskSnapshot ->
-//                    val handler = Handler()
-//                    handler.postDelayed({
-//
-//                    }, 500)
-//                    Toast.makeText(
-//                        this@Car_Add,
-//                        "Car data Upload successful",
-//                        Toast.LENGTH_LONG
-//                    )
-//                        .show()
-//
-//                }
-//                .addOnFailureListener { e ->
-//                    Toast.makeText(this@Car_Add, e.message, Toast.LENGTH_SHORT).show()
-//                    Log.e("data","${e.message}")
-//                }
-//                .addOnProgressListener { taskSnapshot ->
-//                    val progress =
-//                        (100.0 * taskSnapshot.bytesTransferred / taskSnapshot.totalByteCount)
-//                }
-//        } else {
-//            Toast.makeText(this, "You haven't Selected Any file selected", Toast.LENGTH_SHORT)
-//                .show()
-//        }
+
     }
-    private fun  openImagesActivity() {
-        startActivity(Intent(this@Car_Add, MainActivity::class.java))
-    }
+
 
 }
