@@ -31,13 +31,13 @@ class Categories_fragment : Fragment() {
         recyclerview?.layoutManager = GridLayoutManager(requireContext(),2)
 
         // ArrayList of class ItemsViewModel
-        val data = ArrayList<Items>()
+        val data = ArrayList<Drivers>()
 
         // This loop will create 20 Views containing
         // the image with the count of view
-//        for (i in 1..20) {
-//            data.add(Items(R.drawable.subaru, "Item " + i))
-//        }
+        for (i in 1..20) {
+            data.add(Drivers(R.drawable.ic_baseline_person_24, "Driver " + i))
+        }
 
         // This will pass the ArrayList to our Adapter
         val adapter = CustomAdapter2(data)
@@ -49,10 +49,14 @@ class Categories_fragment : Fragment() {
             view.findNavController()
                 .navigate(R.id.action_categories_to_landing)
         }
-
-        view.findViewById<ImageView>(R.id.imageView34)?.setOnClickListener {
-            view.findNavController()
-                .navigate(R.id.action_categories_to_chat)
+        view.findViewById<ImageView>(R.id.imageView32)?.setOnClickListener{
+            view.findNavController().navigate(R.id.action_categories_to_userProfileActivity)
         }
+        view.findViewById<ImageView>(R.id.imageView18)?.setOnClickListener{
+            view.findNavController().navigate(R.id.action_categories_to_car_Add)
+        }
+
+
+
     }
 }

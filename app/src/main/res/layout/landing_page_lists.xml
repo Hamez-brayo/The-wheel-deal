@@ -14,18 +14,18 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/Car_Price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Price"
             android:textColor="#616161"
-            app:layout_constraintEnd_toEndOf="@+id/imageView15"
+            app:layout_constraintEnd_toEndOf="@+id/Car_Image"
             app:layout_constraintHorizontal_bias="0.48"
-            app:layout_constraintStart_toStartOf="@+id/imageView15"
-            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+            app:layout_constraintStart_toStartOf="@+id/Car_Image"
+            app:layout_constraintTop_toBottomOf="@+id/Car_Image" />
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/Car_Image"
             android:layout_width="149dp"
             android:layout_height="195dp"
             android:contentDescription="@string/carpicture_string"
@@ -38,15 +38,15 @@
             app:layout_constraintVertical_bias="0.507" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/Car_Model"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Car Model"
             android:textColor="#616161"
-            app:layout_constraintBottom_toTopOf="@+id/imageView15"
-            app:layout_constraintEnd_toEndOf="@+id/imageView15"
+            app:layout_constraintBottom_toTopOf="@+id/Car_Image"
+            app:layout_constraintEnd_toEndOf="@+id/Car_Image"
             app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="@+id/imageView15" />" />
+            app:layout_constraintStart_toStartOf="@+id/Car_Image" />" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

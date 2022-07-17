@@ -59,9 +59,6 @@
             android:id="@+id/action_landing_to_item_details"
             app:destination="@id/item_details" />
         <action
-            android:id="@+id/action_landing_to_chat"
-            app:destination="@id/chat" />
-        <action
             android:id="@+id/action_landing_to_car_Add"
             app:destination="@id/car_Add" />
         <action
@@ -95,14 +92,14 @@
             android:id="@+id/action_categories_to_item_details"
             app:destination="@id/item_details" />
         <action
-            android:id="@+id/action_categories_to_chat"
-            app:destination="@id/chat" />
-        <action
             android:id="@+id/action_categories_to_car_Add"
             app:destination="@id/car_Add" />
         <action
             android:id="@+id/action_categories_to_userProfileActivity"
             app:destination="@id/userProfileActivity" />
+        <action
+            android:id="@+id/action_categories_to_driver_Details"
+            app:destination="@id/driver_Details" />
     </fragment>
     <fragment
         android:id="@+id/item_details"
@@ -115,59 +112,7 @@
         <action
             android:id="@+id/action_item_details_to_categories"
             app:destination="@id/categories" />
-        <action
-            android:id="@+id/action_item_details_to_chat"
-            app:destination="@id/chat" />
     </fragment>
-    <fragment
-        android:id="@+id/chat"
-        android:name="com.example.thewheeldeal.Chat_fragment"
-        android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" >
-        <action
-            android:id="@+id/action_chat_to_calls"
-            app:destination="@id/calls" />
-        <action
-            android:id="@+id/action_chat_to_item_details"
-            app:destination="@id/item_details" />
-        <action
-            android:id="@+id/action_chat_to_landing"
-            app:destination="@id/landing" />
-        <action
-            android:id="@+id/action_chat_to_categories"
-            app:destination="@id/categories" />
-        <action
-            android:id="@+id/action_chat_to_landing2"
-            app:destination="@id/landing" />
-        <action
-            android:id="@+id/action_chat_to_conv_fragment"
-            app:destination="@id/conv_fragment" />
-        <action
-            android:id="@+id/action_chat_to_car_Add"
-            app:destination="@id/car_Add" />
-        <action
-            android:id="@+id/action_chat_to_userProfileActivity"
-            app:destination="@id/userProfileActivity" />
-    </fragment>
-    <fragment
-        android:id="@+id/calls"
-        android:name="com.example.thewheeldeal.Calls_fragment"
-        android:label="Calls" >
-        <action
-            android:id="@+id/action_calls_to_chat"
-            app:destination="@id/chat" />
-        <action
-            android:id="@+id/action_calls_to_landing"
-            app:destination="@id/landing" />
-        <action
-            android:id="@+id/action_calls_to_categories"
-            app:destination="@id/categories" />
-    </fragment>
-    <fragment
-        android:id="@+id/conv_fragment"
-        android:name="com.example.thewheeldeal.conv_fragment"
-        android:label="fragment_conv_fragment"
-        tools:layout="@layout/fragment_conv_fragment" />
     <activity
         android:id="@+id/car_Add"
         android:name="com.example.thewheeldeal.Car_Add"
@@ -177,4 +122,12 @@
         android:name="com.example.thewheeldeal.UserProfileActivity"
         android:label="activity_user_profile"
         tools:layout="@layout/activity_user_profile" />
+    <fragment
+        android:id="@+id/driver_Details"
+        android:name="com.example.thewheeldeal.Driver_Details"
+        android:label="Driver_Details" >
+        <action
+            android:id="@+id/action_driver_Details_to_categories"
+            app:destination="@id/categories" />
+    </fragment>
 </navigation>

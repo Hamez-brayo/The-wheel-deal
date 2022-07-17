@@ -23,13 +23,14 @@ class CustomAdapter(mList1: FragmentActivity, private val mList: List<Items>):Re
     }
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-        val imageView: ImageView = itemView.findViewById(R.id.imageView15)
-        val textView: TextView = itemView.findViewById(R.id.textView)
-        val price: TextView=itemView.findViewById(R.id.textView29)
+        val imageView: ImageView = itemView.findViewById(R.id.Car_Image)
+        val textView: TextView = itemView.findViewById(R.id.Car_Model)
+        val price: TextView=itemView.findViewById(R.id.Car_Price)
 
         init {
-            val imageView: ImageView = itemView.findViewById(R.id.imageView15)
-            val textView: TextView = itemView.findViewById(R.id.textView)
+            val imageView: ImageView = itemView.findViewById(R.id.Car_Image)
+            val textView: TextView = itemView.findViewById(R.id.Car_Model)
+            val price: TextView = itemView.findViewById(R.id.Car_Price)
 
             itemView.setOnClickListener{
                 itemView.findNavController().navigate(R.id.action_landing_to_item_details)

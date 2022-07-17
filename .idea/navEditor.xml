@@ -8,44 +8,13 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="calls">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="826" />
-                            <option name="y" value="-542" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_calls_to_categories">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_calls_to_chat">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_calls_to_landing">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
                   <entry key="car_Add">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1223" />
-                            <option name="y" value="524" />
+                            <option name="x" value="1374" />
+                            <option name="y" value="-379" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -67,7 +36,7 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_categories_to_chat">
+                            <entry key="action_categories_to_driver_Details">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -92,70 +61,23 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="chat">
+                  <entry key="driver_Details">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1042" />
-                            <option name="y" value="-222" />
+                            <option name="x" value="1282" />
+                            <option name="y" value="757" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_chat_to_calls">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_chat_to_car_Add">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_chat_to_categories">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_chat_to_conv_fragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_chat_to_item_details">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_chat_to_landing">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_chat_to_landing2">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_chat_to_userProfileActivity">
+                            <entry key="action_driver_Details_to_categories">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
                           </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="conv_fragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="1367" />
-                            <option name="y" value="-467" />
-                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -197,11 +119,6 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_item_details_to_chat">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                             <entry key="action_item_details_to_landing">
                               <value>
                                 <LayoutPositions />
@@ -229,11 +146,6 @@
                               </value>
                             </entry>
                             <entry key="action_landing_to_categories">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_landing_to_chat">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -336,8 +248,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="502" />
-                            <option name="y" value="-547" />
+                            <option name="x" value="1021" />
+                            <option name="y" value="-378" />
                           </Point>
                         </option>
                       </LayoutPositions>

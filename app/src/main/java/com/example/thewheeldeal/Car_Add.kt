@@ -63,7 +63,7 @@ class Car_Add : AppCompatActivity() {
 
         val fileName=formatter.format(now)
 
-        val car=Cars(type,model,numPlate,pricing,descr)
+        val car=Cars(type,model,numPlate,pricing,descr )
         val mDatabaseRef = FirebaseDatabase.getInstance().getReference("cars_uploads/$fileName")
 
         mDatabaseRef.push().child(numPlate).setValue(car).addOnSuccessListener{
