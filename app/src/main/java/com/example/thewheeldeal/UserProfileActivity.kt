@@ -34,6 +34,11 @@ class UserProfileActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         val uid = auth.currentUser?.uid.toString()
         databaseReference=FirebaseDatabase.getInstance().getReference("Users")
+
+        binding.driverProfileButton.setOnClickListener{
+            val intent=Intent(this@UserProfileActivity, Driver_Add:: class.java)
+            startActivity(intent)
+        }
         binding.btnSubmit.setOnClickListener{
             val firstname =binding.etFirstName.text.toString()
             val lastname = binding.etLastName.text.toString()

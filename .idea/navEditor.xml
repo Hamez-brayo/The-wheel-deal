@@ -61,6 +61,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="driver_Add">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1763" />
+                            <option name="y" value="271" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="driver_Details">
                     <value>
                       <LayoutPositions>
@@ -248,8 +260,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1021" />
-                            <option name="y" value="-378" />
+                            <option name="x" value="1572" />
+                            <option name="y" value="223" />
                           </Point>
                         </option>
                       </LayoutPositions>
