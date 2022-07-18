@@ -30,6 +30,7 @@ class Categories_fragment : Fragment() {
         // this creates a vertical layout Manager
         recyclerview?.layoutManager = GridLayoutManager(requireContext(),2)
 
+
         // ArrayList of class ItemsViewModel
         val data = ArrayList<Drivers>()
 

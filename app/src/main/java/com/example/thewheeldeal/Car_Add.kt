@@ -89,6 +89,7 @@ class Car_Add : AppCompatActivity() {
 
 
 
+
         startActivityForResult(intent, 100)
 
 
@@ -102,6 +103,7 @@ class Car_Add : AppCompatActivity() {
             binding.ivCarPhoto.setImageURI(ImageUri)
 
 
+
         }
     }
 
@@ -112,6 +114,7 @@ class Car_Add : AppCompatActivity() {
 
         val progressDialog = ProgressDialog(this)
         progressDialog.setMessage("Uploading Listing...")
+
         progressDialog.setCancelable(false)
         progressDialog.show()
 
