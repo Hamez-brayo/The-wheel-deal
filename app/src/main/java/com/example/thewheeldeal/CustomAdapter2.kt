@@ -45,11 +45,11 @@ class CustomAdapter2(private val mList: List<Drivers>):RecyclerView.Adapter<Cust
 
         // sets the text to the textview from our itemHolder class
 
-
-       holder.DrImage.setImageResource(DriversViewModel.DrImage)
-        holder.DrName.text=DriversViewModel.DrName
-
-
-        holder.DrPrice.text=DriversViewModel.DrPrice
+//
+//       holder.DrImage.setImageResource(DriversViewModel.DrImage)
+//        holder.DrName.text=DriversViewModel.DrName
+//
+//
+//        holder.DrPrice.text=DriversViewModel.DrPrice
     }
 }

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     app:cardCornerRadius="12dp"
-    android:backgroundTint="#EAE9E9"
+    android:backgroundTint="@color/white"
     android:layout_margin="8dp"
     android:layout_height="wrap_content">
 
@@ -14,39 +13,51 @@
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/car_Model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Car Model"
+            android:textColor="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Car_Image" />
+
+        <TextView
             android:id="@+id/Car_Price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
             android:text="Price"
-            android:textColor="#616161"
-            app:layout_constraintEnd_toEndOf="@+id/Car_Image"
-            app:layout_constraintHorizontal_bias="0.48"
-            app:layout_constraintStart_toStartOf="@+id/Car_Image"
-            app:layout_constraintTop_toBottomOf="@+id/Car_Image" />
+            android:textColor="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/car_Model" />
 
         <ImageView
             android:id="@+id/Car_Image"
             android:layout_width="149dp"
             android:layout_height="195dp"
+            android:layout_marginTop="8dp"
             android:contentDescription="@string/carpicture_string"
             android:elevation="3dp"
             android:src="@drawable/subaru"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.507" />
+            app:layout_constraintTop_toBottomOf="@+id/Car_Type" />
 
         <TextView
-            android:id="@+id/Car_Model"
+            android:id="@+id/Car_Type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Car Model"
-            android:textColor="#616161"
-            app:layout_constraintBottom_toTopOf="@+id/Car_Image"
-            app:layout_constraintEnd_toEndOf="@+id/Car_Image"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="@+id/Car_Image" />" />
+            android:layout_marginTop="8dp"
+            android:text="Car Type"
+            android:textColor="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />"
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

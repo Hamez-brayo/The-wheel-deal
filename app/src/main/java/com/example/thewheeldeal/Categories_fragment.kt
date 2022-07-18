@@ -36,9 +36,9 @@ class Categories_fragment : Fragment() {
 
         // This loop will create 20 Views containing
         // the image with the count of view
-        for (i in 1..20) {
-            data.add(Drivers(R.drawable.ic_baseline_person_24, "Driver " + i))
-        }
+//        for (i in 1..20) {
+//            data.add(Drivers(R.drawable.ic_baseline_person_24, "Driver " + i))
+//        }
 
         // This will pass the ArrayList to our Adapter
         val adapter = CustomAdapter2(data)
