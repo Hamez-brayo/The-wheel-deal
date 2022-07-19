@@ -19,7 +19,7 @@
         app:cornerRadius="34dp"
         app:iconPadding="34dp"
         app:layout_constraintEnd_toEndOf="@+id/passforgot"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/til_password"
         app:layout_constraintTop_toBottomOf="@+id/passforgot" />
 
     <TextView
@@ -45,10 +45,10 @@
         android:text="@string/forgot_your_password_string"
         android:textColor="#DD2C00"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/til_password"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toStartOf="@+id/til_password"
+        app:layout_constraintTop_toBottomOf="@+id/til_password" />
 
     <TextView
         android:id="@+id/passforgot2"
@@ -76,73 +76,59 @@
         app:layout_constraintEnd_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
-    <EditText
-        android:id="@+id/emailInput"
-        android:layout_width="360dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/Welcome"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="120dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:autofillHints=""
-        android:background="#30000000"
-        android:drawableStart="@drawable/ic_baseline_email_24"
-        android:drawablePadding="20dp"
-        android:fontFamily="sans-serif"
-        android:hint="@string/email_string"
-        android:inputType="textEmailAddress"
-        android:padding="20dp"
-        android:textColor="@color/my_apptheme"
-        android:textColorHint="#455A64"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:hint="Email"
+        android:padding="5dp"
+        android:textColorHint="@color/my_apptheme"
+        app:boxStrokeColor="#000000"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Welcome"
-        tools:ignore="TextContrastCheck,TextContrastCheck" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="360dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:autofillHints="true"
-        android:background="#30000000"
-        android:drawableStart="@drawable/ic_baseline_info_24"
-        android:drawablePadding="20dp"
-        android:fontFamily="sans-serif"
-        android:hint="@string/password_string"
-        android:inputType="textPassword"
-        android:padding="20dp"
-        android:textColor="@color/my_apptheme"
-        android:textColorHint="#455A64"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailInput"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/Welcome">
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:textColor="@color/my_apptheme"
+            android:textSize="14dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Pass"
-        android:layout_width="wrap_content"
+        android:id="@+id/til_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
-        app:passwordToggleEnabled="true" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:visibility="gone"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        />
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:padding="5dp"
+        android:textColorHint="@color/my_apptheme"
+        app:boxStrokeColor="#000000"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_email">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            app:endIconMode="password_toggle"
+            android:padding="14dp"
+            android:textColor="@color/my_apptheme"
+            android:textSize="14dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

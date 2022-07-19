@@ -91,9 +91,10 @@ class Driver_Add : AppCompatActivity() {
         val DrIdNum=binding.etIDnum.text.toString()
         val DrEmail=binding.etEmailAdd.text.toString()
         val DrimageUrl= Url
+        val DrCharge=binding.etCharges.text.toString()
 
 
-        val Driver=Drivers(DrName,DrContact,DrDlNum,DrIdNum,DrEmail,DrimageUrl )
+        val Driver=Drivers(DrName,DrContact,DrDlNum,DrIdNum,DrEmail,DrimageUrl , DrCharge)
 
         mDatabaseRef.push().child(DrName).setValue(Driver).addOnSuccessListener{
 

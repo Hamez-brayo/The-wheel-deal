@@ -25,6 +25,7 @@ class UserProfileActivity : AppCompatActivity() {
     private lateinit var uid: String
     private lateinit var databaseReference: DatabaseReference
     private lateinit var storageReference: StorageReference
+    private lateinit var database: FirebaseDatabase
     private lateinit var imageUri: Uri
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,13 +33,17 @@ class UserProfileActivity : AppCompatActivity() {
         binding= ActivityUserProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
+        database=FirebaseDatabase.getInstance()
+        databaseReference=database.reference.child("profile")
+
         val uid = auth.currentUser?.uid.toString()
-        databaseReference=FirebaseDatabase.getInstance().getReference("Users")
+        databaseReference=FirebaseDatabase.getInstance().getReference("profile")
 
         binding.driverProfileButton.setOnClickListener{
             val intent=Intent(this@UserProfileActivity, Driver_Add:: class.java)
             startActivity(intent)
         }
+
         binding.btnSubmit.setOnClickListener{
             val firstname =binding.etFirstName.text.toString()
             val lastname = binding.etLastName.text.toString()
@@ -48,7 +53,6 @@ class UserProfileActivity : AppCompatActivity() {
             val user= User( firstname,lastname, email, mobilenum)
 
             if(uid.isNotEmpty()) {
-                getUserData()
 
 
             }else if (uid!= null){
@@ -64,49 +68,46 @@ class UserProfileActivity : AppCompatActivity() {
                 }
             }
         }
+
         binding.ivUserPhoto.setOnClickListener{
             selectImage()
         }
 
+        loadProfile()
+
 
 
         }
+    private fun loadProfile(){
+        val user=auth.currentUser
+        val userreference=databaseReference.child(user?.uid!!)
 
-    private fun getUserData() {
-        databaseReference.child(uid).addValueEventListener(object : ValueEventListener{
+        binding.etEmail.hint="Email -->"+user.email
+        userreference.addValueEventListener(object :ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
-                user = snapshot.getValue(User::class.java)!!
-                binding.etFirstName.setText(user.firstname)
-                binding.etLastName.setText(user.lastname)
-                binding.etEmail.setText(user.email)
-                binding.etMobileNumber.setText(user.mobilenum)
 
-                getUserProfile()
+                binding.etFirstName.hint="Firstname -->"+snapshot.child("firstname").value.toString()
+                binding.etLastName.hint="Lastname -->"+snapshot.child("lastname").value.toString()
+                binding.etMobileNumber.hint="Contact-->"+snapshot.child("contact").value.toString()
             }
 
             override fun onCancelled(error: DatabaseError) {
 
-                Toast.makeText(this@UserProfileActivity,"Failed To Get User Profile Data", Toast.LENGTH_SHORT).show()
-
             }
 
         })
-    }
-
-    private fun getUserProfile() {
-
-        storageReference=FirebaseStorage.getInstance().reference.child("Users/$uid.jpg")
-        val localFile = File.createTempFile("tempImage","jpg")
-        storageReference.getFile(localFile).addOnSuccessListener {
-            val bitmap=BitmapFactory.decodeFile(localFile.absolutePath)
-            binding.ivUserPhoto.setImageBitmap(bitmap)
-
-
-        }.addOnFailureListener{
-            Toast.makeText(this@UserProfileActivity,"Failed To Retrieve Image", Toast.LENGTH_SHORT).show()
-
+        binding.logoutBtn.setOnClickListener{
+            auth.signOut()
+            startActivity(Intent(this@UserProfileActivity,Login_activity::class.java))
+            finish()
         }
+
+
+
     }
+
+
+
 
     private fun selectImage() {
         val intent = Intent()

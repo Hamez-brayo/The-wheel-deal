@@ -36,7 +36,7 @@
             android:contentDescription="@string/AddButton"
             app:layout_constraintBottom_toBottomOf="@+id/imageView61"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fl_id_image"
+            app:layout_constraintTop_toBottomOf="@+id/til_Charges"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/addbutton"
             tools:ignore="ImageContrastCheck" />
@@ -62,7 +62,7 @@
             android:id="@+id/textView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto_bold"
             android:text="Driver Profile"
             android:textColor="@color/teal_200"
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:hint="Username"
             android:padding="5dp"
             android:textColorHint="@color/my_apptheme"
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:hint="Phone number"
             android:padding="5dp"
             android:textColorHint="@color/my_apptheme"
@@ -134,8 +134,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:hint="Driver's Licence"
+            android:layout_marginTop="8dp"
+            android:hint="Driver's Licence Number"
             android:padding="5dp"
             android:textColorHint="@color/my_apptheme"
             app:boxStrokeColor="#000000"
@@ -162,7 +162,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:hint="ID Number"
             android:padding="5dp"
             android:textColorHint="@color/my_apptheme"
@@ -193,7 +193,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:hint="Email Address"
             android:padding="5dp"
             android:textColorHint="@color/my_apptheme"
@@ -221,7 +221,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="Upload your ID"
             android:textColor="@color/teal_200"
@@ -233,7 +233,7 @@
             android:id="@+id/fl_id_image"
             android:layout_width="130dp"
             android:layout_height="120dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -255,6 +255,36 @@
                 android:background="@drawable/add_box"
                 android:elevation="5dp" />
         </FrameLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_Charges"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="Price Per Day"
+            android:padding="5dp"
+            android:textColorHint="@color/my_apptheme"
+            app:boxStrokeColor="#000000"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fl_id_image">
+
+
+
+            <EditText
+                android:id="@+id/et_Charges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="@color/my_apptheme"
+                android:textSize="14dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

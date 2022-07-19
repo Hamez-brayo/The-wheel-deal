@@ -51,8 +51,14 @@
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/font/poppins_semibold.xml" value="0.4171875" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/font/roboto_bold.xml" value="0.4171875" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/activity_car_add.xml" value="0.3875" />
+        <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/activity_categories.xml" value="0.379981884057971" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/activity_driver_add.xml" value="0.3875" />
+        <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/activity_item_deets.xml" value="0.3875" />
+        <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/activity_item_details.xml" value="0.3875" />
+        <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/activity_landing.xml" value="0.2765625" />
+        <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/activity_login.xml" value="0.3875" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/activity_register.xml" value="0.290625" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/activity_user_profile.xml" value="0.3875" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/add_car.xml" value="0.33" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/add_car_dialogue_input.xml" value="0.33" />
@@ -78,6 +84,7 @@
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/recepient_chat_list.xml" value="0.5" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/recipient_chat_list.xml" value="0.25" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/layout/user_chat_list.xml" value="0.2015625" />
+        <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/menu/menu_main.xml" value="0.3875" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/OMEN/Desktop/the_wheel_deal_mobile-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>

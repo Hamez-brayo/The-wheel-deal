@@ -21,73 +21,17 @@
         android:name="com.example.thewheeldeal.NextFragment"
         android:label="NextFragment" >
         <action
-            android:id="@+id/action_nextFragment2_to_sign_up"
-            app:destination="@id/sign_up"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
+            android:id="@+id/action_nextFragment2_to_register_activity"
+            app:destination="@id/register_activity" />
         <action
-            android:id="@+id/action_nextFragment2_to_login"
-            app:destination="@id/login"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/sign_up"
-        android:name="com.example.thewheeldeal.sign_up_fragment"
-        android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" >
-        <action
-            android:id="@+id/action_sign_up_to_landing"
-            app:destination="@id/landing"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
-        <action
-            android:id="@+id/action_sign_up_to_login"
-            app:destination="@id/login"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-    </fragment>
-    <fragment
-        android:id="@+id/landing"
-        android:name="com.example.thewheeldeal.Landing_fragment"
-        android:label="fragment_landing"
-        tools:layout="@layout/fragment_landing" >
-        <action
-            android:id="@+id/action_landing_to_categories"
-            app:destination="@id/categories" />
-        <action
-            android:id="@+id/action_landing_to_item_details"
-            app:destination="@id/item_details" />
-        <action
-            android:id="@+id/action_landing_to_car_Add"
-            app:destination="@id/car_Add" />
-        <action
-            android:id="@+id/action_landing_to_userProfileActivity"
-            app:destination="@id/userProfileActivity" />
-    </fragment>
-    <fragment
-        android:id="@+id/login"
-        android:name="com.example.thewheeldeal.Login_fragment"
-        android:label="Login" >
-        <action
-            android:id="@+id/action_login_to_sign_up"
-            app:destination="@id/sign_up"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
-        <action
-            android:id="@+id/action_login_to_landing"
-            app:destination="@id/landing"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            android:id="@+id/action_nextFragment2_to_login_activity"
+            app:destination="@id/login_activity" />
     </fragment>
     <fragment
         android:id="@+id/categories"
         android:name="com.example.thewheeldeal.Categories_fragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" >
-        <action
-            android:id="@+id/action_categories_to_landing"
-            app:destination="@id/landing" />
         <action
             android:id="@+id/action_categories_to_item_details"
             app:destination="@id/item_details" />
@@ -106,9 +50,6 @@
         android:name="com.example.thewheeldeal.Item_details"
         android:label="fragment_item_details"
         tools:layout="@layout/fragment_item_details" >
-        <action
-            android:id="@+id/action_item_details_to_landing"
-            app:destination="@id/landing" />
         <action
             android:id="@+id/action_item_details_to_categories"
             app:destination="@id/categories" />
@@ -130,4 +71,16 @@
             android:id="@+id/action_driver_Details_to_categories"
             app:destination="@id/categories" />
     </fragment>
+    <activity
+        android:id="@+id/login_activity"
+        android:name="com.example.thewheeldeal.Login_activity"
+        android:label="Login_activity" />
+    <activity
+        android:id="@+id/register_activity"
+        android:name="com.example.thewheeldeal.Register_activity"
+        android:label="Register_activity" />
+    <activity
+        android:id="@+id/landing_activity"
+        android:name="com.example.thewheeldeal.Landing_activity"
+        android:label="Landing_activity" />
 </navigation>

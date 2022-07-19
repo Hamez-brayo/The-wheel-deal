@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<data>
+    <variable
+        name="isCars"
+        type="com.example.thewheeldeal.Cars" />
+
+
+</data>
+<androidx.cardview.widget.CardView
     android:layout_width="wrap_content"
     app:cardCornerRadius="12dp"
     android:backgroundTint="@color/white"
@@ -43,6 +51,7 @@
             android:layout_marginTop="8dp"
             android:contentDescription="@string/carpicture_string"
             android:elevation="3dp"
+            android:imageUrl="@{isCars.imageUrl}"
             android:src="@drawable/subaru"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,3 +71,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
+</layout>

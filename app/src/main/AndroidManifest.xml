@@ -13,6 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheWheelDeal">
         <activity
+            android:name=".Item_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Item_deets"
+            android:exported="false" />
+        <activity
+            android:name=".Categories_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Landing_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Register_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_activity"
+            android:exported="false" />
+        <activity
             android:name=".Driver_Add"
             android:exported="false" />
         <activity

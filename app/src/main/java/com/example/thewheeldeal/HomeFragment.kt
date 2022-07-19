@@ -20,6 +20,7 @@ class HomeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         view.findViewById<Button>(R.id.button).setOnClickListener {
             view.findNavController().navigate(R.id.action_homeFragment_to_nextFragment22)
         }

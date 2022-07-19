@@ -20,10 +20,10 @@ class NextFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         view.findViewById<Button>(R.id.button3).setOnClickListener {
-            view.findNavController().navigate(R.id.action_nextFragment2_to_sign_up)
+            view.findNavController().navigate(R.id.action_nextFragment2_to_register_activity)
         }
         view.findViewById<Button>(R.id.button2).setOnClickListener {
-            view.findNavController().navigate(R.id.action_nextFragment2_to_login)
+            view.findNavController().navigate(R.id.action_nextFragment2_to_login_activity)
         }
     }
 }
