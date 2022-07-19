@@ -30,9 +30,9 @@ class Landing_activity : AppCompatActivity() {
 
 
 
-        binding.recyclerview.layoutManager = LinearLayoutManager(this)
+        recyclerview.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
 
-        binding.recyclerview.setHasFixedSize(true)
+        recyclerview.setHasFixedSize(true)
 
 
 

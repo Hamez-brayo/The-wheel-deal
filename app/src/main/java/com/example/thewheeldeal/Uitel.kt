@@ -6,7 +6,6 @@ import androidx.databinding.BindingAdapter
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.thewheeldeal.R
 
 fun getProgessDrawable(c:Context): CircularProgressDrawable {
     return CircularProgressDrawable(c).apply {
@@ -21,7 +20,7 @@ fun getProgessDrawable(c:Context): CircularProgressDrawable {
 fun ImageView.loadImage(uri:String?,progressDawable:CircularProgressDrawable){
 
     val option = RequestOptions().placeholder(progressDawable)
-        .error(R.mipmap.ic_launcher)
+        .error(R.drawable.profile)
 
     Glide.with(context)
         .setDefaultRequestOptions(option)

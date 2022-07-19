@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Item_details">
+    tools:context=".Driver_details_activity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -198,26 +198,13 @@
         app:layout_constraintTop_toTopOf="@+id/imageView33" />
 
     <TextView
-        android:id="@+id/DrRegion"
-        android:layout_width="81dp"
-        android:layout_height="19dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/region_string"
-        app:layout_constraintEnd_toEndOf="@+id/DrName"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/DrName"
-        app:layout_constraintTop_toBottomOf="@+id/DrName" />
-
-    <TextView
         android:id="@+id/DrContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Contact"
-        app:layout_constraintEnd_toEndOf="@+id/DrRegion"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/DrRegion"
-        app:layout_constraintTop_toBottomOf="@+id/DrRegion" />
+        android:layout_marginTop="16dp"
+        android:text="Charges Per Day"
+        app:layout_constraintStart_toStartOf="@+id/DrName"
+        app:layout_constraintTop_toBottomOf="@+id/DrName" />
 
     <Button
         android:id="@+id/Contact_btn"
@@ -226,7 +213,7 @@
 
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
-        android:text="Contact"
+        android:text="Book"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="20sp"

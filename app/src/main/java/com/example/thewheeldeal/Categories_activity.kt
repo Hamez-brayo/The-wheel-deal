@@ -7,12 +7,14 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.thewheeldeal.databinding.ActivityCategoriesBinding
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_categories.*
 
 class Categories_activity : AppCompatActivity() {
     private lateinit var binding: ActivityCategoriesBinding
     private lateinit var dbref: DatabaseReference
-    private lateinit var DriverRecyclerView: RecyclerView
-    private lateinit var  DrverArrayList:ArrayList<Drivers>
+    private lateinit var  DriverList:ArrayList<Drivers>
+    private lateinit var bAdapter: DriverAdapter
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,15 +22,17 @@ class Categories_activity : AppCompatActivity() {
         binding=ActivityCategoriesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        DriverList=ArrayList()
+        bAdapter=DriverAdapter(this,DriverList)
 
-        DriverRecyclerView=binding.Drrecyclerview
+
+        //DriverRecyclerView=binding.Drrecyclerview
 
 
-        DriverRecyclerView.layoutManager = GridLayoutManager( this, 2)
+        Drrecyclerview.layoutManager = GridLayoutManager( this, 2)
 
-        DriverRecyclerView.setHasFixedSize(true)
+        Drrecyclerview.setHasFixedSize(true)
 
-        DrverArrayList= arrayListOf<Drivers>()
         getDriverData()
 
 
@@ -55,9 +59,10 @@ class Categories_activity : AppCompatActivity() {
                 if (snapshot.exists()){
                     for (carSnapshot in snapshot.children){
                         val driver=carSnapshot.getValue(Drivers::class.java)
-                        DrverArrayList.add(driver!!)
+                        DriverList.add(driver!!)
 
                     }
+                    Drrecyclerview.adapter=bAdapter
 
                     // DriverRecyclerView.adapter =DriverAdapter(DrverArrayList!!)
                 }
